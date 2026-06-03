@@ -61,7 +61,7 @@ export default function OrgStructure() {
   };
 
   const president: Person = {
-    name: "فهد العليّاني",
+    name: "مثنى البلوي",
     role: "رئيس النادي",
     department: "كلية العلوم الطبية التطبيقية",
     bio: "",
