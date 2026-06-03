@@ -40,12 +40,37 @@
         }
       },
       "required": ["fullName", "studentId", "phone", "level", "department", "committee"]
+    },
+    "AdminAccount": {
+      "title": "Admin Account",
+      "description": "The single unique administrator account for the community health club.",
+      "type": "object",
+      "properties": {
+        "username": {
+          "type": "string",
+          "description": "The administrator username"
+        },
+        "passwordHash": {
+          "type": "string",
+          "description": "Secure hashing or representation of the administrator password"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Creation timestamp for the administrator account"
+        }
+      },
+      "required": ["username", "passwordHash"]
     }
   },
   "firestore": {
     "join_requests/{requestId}": {
       "schema": "JoinRequest",
       "description": "Collection storing join requests submitted by interested university students"
+    },
+    "admin_accounts/{accountId}": {
+      "schema": "AdminAccount",
+      "description": "Collection storing the active single administrator credential for system management"
     }
   }
 }

@@ -14,6 +14,7 @@ import SpecializationsSection from "./components/SpecializationsSection";
 import MagazineSection from "./components/MagazineSection";
 import BMICalculatorSection from "./components/BMICalculatorSection";
 import AdminPanel from "./components/AdminPanel";
+import AdminPortalBox from "./components/AdminPortalBox";
 import {
   Menu,
   X,
@@ -1452,6 +1453,9 @@ export default function App() {
         </AnimatePresence>
       </main>
 
+      {/* ADMINISTRATION AND ENROLLMENT PORTAL BOX */}
+      <AdminPortalBox />
+
       {/* COMPACT FOOTER FOOTAGE */}
       <footer
         id="site-footer"
@@ -1676,14 +1680,6 @@ export default function App() {
             </p>
             <div className="flex items-center gap-3 justify-center md:justify-end text-slate-500 shrink-0">
               <span className="hover:text-slate-400 transition-colors">جامعة الملك سعود</span>
-              <span className="text-slate-700">|</span>
-              <button
-                onClick={() => setShowAdmin(true)}
-                className="flex items-center gap-1.5 text-slate-500 hover:text-brand-teal transition-colors focus:outline-none cursor-pointer"
-              >
-                <ShieldCheck className="w-3.5 h-3.5 text-emerald-600 animate-pulse" />
-                <span>إدارة ومزامنة الطلبات</span>
-              </button>
             </div>
           </div>
         </div>

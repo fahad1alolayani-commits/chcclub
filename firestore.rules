@@ -29,5 +29,14 @@ service cloud.firestore {
       allow update: if isValidJoinRequest(request.resource.data)
                     && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['synced']);
     }
+
+    match /admin_accounts/{accountId} {
+      // Allow reading whether an admin is registered and checking identity
+      allow read: if true;
+      // Allow registering the single active admin account
+      allow create: if accountId == 'active_admin' 
+                    && request.resource.data.username is string
+                    && request.resource.data.passwordHash is string;
+    }
   }
 }
