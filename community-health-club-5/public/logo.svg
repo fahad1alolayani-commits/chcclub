@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Top-Left Quadrant: Teal L-shape -->
+  <path d="M 14 41 L 41 41 L 41 14" fill="none" stroke="#56A8A7" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Top-Right Quadrant: Blue L-shape + Blue Dot -->
+  <path d="M 86 41 L 59 41 L 59 14" fill="none" stroke="#1CAADA" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="80" cy="20" r="9" fill="#1CAADA" />
+
+  <!-- Bottom-Left Quadrant: Blue L-shape + Blue Dot -->
+  <path d="M 14 59 L 41 59 L 41 86" fill="none" stroke="#1CAADA" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="20" cy="80" r="9" fill="#1CAADA" />
+
+  <!-- Bottom-Right Quadrant: Teal L-shape -->
+  <path d="M 86 59 L 59 59 L 59 86" fill="none" stroke="#56A8A7" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

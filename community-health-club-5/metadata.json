@@ -1,0 +1,6 @@
+{
+  "name": "Community Health Club",
+  "description": "Bilingual web portal for the Community Health Club at the College of Applied Medical Sciences, King Saud University.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

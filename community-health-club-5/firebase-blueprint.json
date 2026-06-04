@@ -1,0 +1,76 @@
+{
+  "entities": {
+    "JoinRequest": {
+      "title": "Join Request",
+      "description": "A student join request for the community health club.",
+      "type": "object",
+      "properties": {
+        "fullName": {
+          "type": "string",
+          "description": "Full name of the student"
+        },
+        "studentId": {
+          "type": "string",
+          "description": "9-digit student university ID"
+        },
+        "phone": {
+          "type": "string",
+          "description": "Standard Saudi mobile phone number starting with 05 or 5"
+        },
+        "level": {
+          "type": "string",
+          "description": "The current academic level/semester"
+        },
+        "department": {
+          "type": "string",
+          "description": "The selected major or specialization"
+        },
+        "committee": {
+          "type": "string",
+          "description": "The desired committee within the club"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp indicating when the request was submitted"
+        },
+        "synced": {
+          "type": "boolean",
+          "description": "Whether the request has been synced to Google Sheets"
+        }
+      },
+      "required": ["fullName", "studentId", "phone", "level", "department", "committee"]
+    },
+    "AdminAccount": {
+      "title": "Admin Account",
+      "description": "The single unique administrator account for the community health club.",
+      "type": "object",
+      "properties": {
+        "username": {
+          "type": "string",
+          "description": "The administrator username"
+        },
+        "passwordHash": {
+          "type": "string",
+          "description": "Secure hashing or representation of the administrator password"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Creation timestamp for the administrator account"
+        }
+      },
+      "required": ["username", "passwordHash"]
+    }
+  },
+  "firestore": {
+    "join_requests/{requestId}": {
+      "schema": "JoinRequest",
+      "description": "Collection storing join requests submitted by interested university students"
+    },
+    "admin_accounts/{accountId}": {
+      "schema": "AdminAccount",
+      "description": "Collection storing the active single administrator credential for system management"
+    }
+  }
+}

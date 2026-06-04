@@ -1,0 +1,42 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Global safety catch-all
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Helper validation for JoinRequest
+    function isValidJoinRequest(data) {
+      return data.fullName is string && data.fullName.size() <= 200
+          && data.studentId is string && data.studentId.size() <= 20
+          && data.phone is string && data.phone.size() <= 20
+          && data.level is string && data.level.size() <= 100
+          && data.department is string && data.department.size() <= 100
+          && data.committee is string && data.committee.size() <= 100
+          && data.synced is bool;
+    }
+
+    match /join_requests/{requestId} {
+      // Allow public creation of join requests
+      allow create: if isValidJoinRequest(request.resource.data) 
+                    && request.resource.data.synced == false;
+
+      // Allow public read for simple admin panel
+      allow read: if true;
+
+      // Allow updating synced field when marking synced to Sheets
+      allow update: if isValidJoinRequest(request.resource.data)
+                    && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['synced']);
+    }
+
+    match /admin_accounts/{accountId} {
+      // Allow reading whether an admin is registered and checking identity
+      allow read: if true;
+      // Allow registering the single active admin account
+      allow create: if accountId == 'active_admin' 
+                    && request.resource.data.username is string
+                    && request.resource.data.passwordHash is string;
+    }
+  }
+}
