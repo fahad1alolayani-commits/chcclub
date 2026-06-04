@@ -71,32 +71,32 @@ const partnersList = [
   {
     name: "هيئة الهلال الأحمر السعودي",
     bg: "bg-slate-50 border-slate-200",
-    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/e/e3/Saudi_Red_Crescent_Authority_Logo.svg"
+    logoUrl: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%23e11d48'/><path d='M35 50 h30 M50 35 v30' stroke='white' stroke-width='12' stroke-linecap='square'/></svg>"
   },
   {
     name: "المركز السعودي لزراعة الأعضاء",
     bg: "bg-slate-50 border-slate-200",
-    logoUrl: "https://scot.gov.sa/assets/images/logo.png"
+    logoUrl: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='none' stroke='%23059669' stroke-width='8'/><path d='M50 20 C40 40 40 60 50 80 C60 60 60 40 50 20 Z' fill='%23059669'/></svg>"
   },
   {
     name: "وزارة التعليم",
     bg: "bg-slate-50 border-slate-200",
-    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Ministry_of_Education_%28Saudi_Arabia%29_Logo.svg/1200px-Ministry_of_Education_%28Saudi_Arabia%29_Logo.svg.png"
+    logoUrl: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M20 30 L50 15 L80 30 L50 45 Z' fill='%230284c7'/><path d='M30 40 V65 C30 75 70 75 70 65 V40' fill='none' stroke='%230284c7' stroke-width='8'/></svg>"
   },
   {
     name: "الهيئة العامة للعقار",
     bg: "bg-slate-50 border-slate-200",
-    logoUrl: "https://rega.gov.sa/assets/images/logo.png"
+    logoUrl: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M20 75 V40 L50 15 L80 40 V75 Z' fill='none' stroke='%237c3aed' stroke-width='8'/><rect x='40' y='50' width='20' height='25' fill='%237c3aed'/></svg>"
   },
   {
     name: "هيئة تطوير بوابة الدرعية",
     bg: "bg-slate-50 border-slate-200",
-    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/c/c8/Diriyah_Gate_Development_Authority_Logo.png"
+    logoUrl: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M30 20 H70 V35 H30 Z M40 35 H60 V80 H40 Z' fill='%23b45309'/><circle cx='50' cy='27' r='3' fill='white'/></svg>"
   },
   {
     name: "مركز الملك سلمان الاجتماعي",
     bg: "bg-slate-50 border-slate-200",
-    logoUrl: "https://jsc.org.sa/wp-content/uploads/2024/09/JSC_LOGO-copy.png"
+    logoUrl: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'><circle cx='75' cy='35' r='18' fill='%23f1c40f'/><path d='M75 60 C45 60 35 85 45 105 C55 110 85 110 105 102 C115 85 105 60 75 60 Z' fill='none' stroke='%232980b9' stroke-width='10' stroke-linecap='round'/><path d='M75 68 C55 68 48 85 55 100' fill='none' stroke='%231f3a60' stroke-width='8' stroke-linecap='round'/></svg>"
   }
 ];
 function PartnerLogo({ partner }: { partner: typeof partnersList[number] }) {
