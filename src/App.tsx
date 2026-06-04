@@ -69,238 +69,61 @@ const TikTokIcon = ({ className = "w-4.5 h-4.5" }: { className?: string }) => (
 
 const partnersList = [
   {
-    name: "جامعة الملك سعود",
-    subName: "كلية العلوم الطبية التطبيقية - الحاضن الأكاديمي",
-    bg: "bg-emerald-50/20 border-emerald-100/60",
-    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/King_Saud_University_Logo.svg/512px-King_Saud_University_Logo.svg.png"
+    name: "شعار",
+    subName: "مساحة مخصصة لشعار شريك النجاح ١",
+    bg: "bg-slate-50 border-slate-200",
+    logoUrl: ""
   },
   {
-    name: "وزارة الصحة السعودية",
-    subName: "الوقاية والتوعية الصحية المجتمعية",
-    bg: "bg-green-50/20 border-green-100/60",
-    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Logo_of_the_Ministry_of_Health_of_Saudi_Arabia.svg/512px-Logo_of_the_Ministry_of_Health_of_Saudi_Arabia.svg.png"
+    name: "شعار",
+    subName: "مساحة مخصصة لشعار شريك النجاح ٢",
+    bg: "bg-slate-50 border-slate-200",
+    logoUrl: ""
   },
   {
-    name: "هيئة الهلال الأحمر السعودي",
-    subName: "برامج التطوع والاستجابة الإسعافية",
-    bg: "bg-rose-50/20 border-rose-100/60",
-    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/2/23/Saudi_Red_Crescent_Authority_logo.svg"
+    name: "شعار",
+    subName: "مساحة مخصصة لشعار شريك النجاح ٣",
+    bg: "bg-slate-50 border-slate-200",
+    logoUrl: ""
   },
   {
-    name: "وزارة التعليم",
-    subName: "التطوير والابتكار الأكاديمي والطلابي",
-    bg: "bg-blue-50/20 border-blue-100/60",
-    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Ministry_of_Education_of_Saudi_Arabia_logo.svg/512px-Ministry_of_Education_of_Saudi_Arabia_logo.svg.png"
+    name: "شعار",
+    subName: "مساحة مخصصة لشعار شريك النجاح ٤",
+    bg: "bg-slate-50 border-slate-200",
+    logoUrl: ""
   },
   {
-    name: "هيئة تطوير بوابة الدرعية",
-    subName: "التراث والمسؤولية والتمكين المجتمعي",
-    bg: "bg-amber-50/20 border-amber-100/60",
-    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/d/df/Diriyah_Gate_Development_Authority_logo.png"
+    name: "شعار",
+    subName: "مساحة مخصصة لشعار شريك النجاح ٥",
+    bg: "bg-slate-50 border-slate-200",
+    logoUrl: ""
   },
   {
-    name: "الهيئة العامة للعقار",
-    subName: "شريك التنظيم والتمكين العقاري الاستراتيجي",
-    bg: "bg-teal-50/20 border-teal-100/60",
-    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/e/ea/Logo_of_the_Real_Estate_General_Authority_of_Saudi_Arabia.svg"
-  },
-  {
-    name: "مركز الملك سلمان للإغاثة والأعمال الإنسانية",
-    subName: "العون الإنساني الدولي والأثر المستدام",
-    bg: "bg-lime-50/20 border-lime-100/60",
-    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/e/ee/King_Salman_Humanitarian_Aid_and_Relief_Center_%28KSrelief%29_logo.svg"
-  },
-  {
-    name: "المركز السعودي لزراعة الأعضاء",
-    subName: "رعاية المرضى وتطوير المنظومة الطبية والوقائية",
-    bg: "bg-cyan-50/20 border-cyan-100/60",
-    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/e/e8/Saudi_Center_for_Organ_Transplantation_logo.svg"
+    name: "شعار",
+    subName: "مساحة مخصصة لشعار شريك النجاح ٦",
+    bg: "bg-slate-50 border-slate-200",
+    logoUrl: ""
   }
 ];
 
 function PartnerLogo({ partner }: { partner: typeof partnersList[number] }) {
   const [hasError, setHasError] = useState(false);
 
-  if (hasError) {
-    // Elegant bespoke vector logo fallbacks according to the partner name
-    if (partner.name.includes("سعود") && !partner.name.includes("المدينة الطبية")) {
-      // King Saud University (KSU) fallback
-      return (
-        <div className="flex items-center gap-3.5 select-none pointer-events-none text-right px-2">
-          <svg className="w-11 h-11 text-brand-blue flex-shrink-0" viewBox="0 0 100 100" fill="currentColor">
-            <circle cx="50" cy="50" r="45" fill="none" stroke="#1C64F2" strokeWidth="4" />
-            <path d="M50 20 L75 35 L75 65 L50 80 L25 65 L25 35 Z" fill="#1C64F2" opacity="0.15" />
-            <path d="M50 22 L71 34.5 L71 63.5 L50 76 L29 63.5 L29 34.5 Z" fill="none" stroke="#1C64F2" strokeWidth="3" />
-            {/* Book symbol */}
-            <path d="M38 48 Q50 44 62 48 M38 53 Q50 49 62 53 M50 48 L50 70" stroke="#1C64F2" strokeWidth="3" fill="none" strokeLinecap="round" />
-            {/* Palm tree */}
-            <path d="M50 28 L50 42 M46 32 Q50 34 54 32 M44 36 Q50 38 56 36" stroke="#1C64F2" strokeWidth="2.5" fill="none" />
-          </svg>
-          <div className="flex flex-col">
-            <span className="text-xs font-sans font-black text-slate-800 leading-tight">جامعة الملك سعود</span>
-            <span className="text-[9px] font-sans font-black text-brand-blue/80 tracking-normal mt-0.5 leading-none">الحاضن الأكاديمي الرئيسي</span>
-          </div>
-        </div>
-      );
-    } else if (partner.name.includes("الصحة")) {
-      // Ministry of Health (MOH) fallback
-      return (
-        <div className="flex items-center gap-3.5 select-none pointer-events-none text-right px-2">
-          <svg className="w-11 h-11 text-[#1CAADA] flex-shrink-0" viewBox="0 0 100 100" fill="currentColor">
-            <circle cx="50" cy="50" r="45" fill="none" stroke="#1CAADA" strokeWidth="4" />
-            <path d="M50 18 L50 72" stroke="#1CAADA" strokeWidth="4" strokeLinecap="round" />
-            {/* Palm branches wrapping around */}
-            <path d="M32 45 Q50 50 68 45 M30 35 Q50 40 70 35 M34 55 Q50 60 66 55" fill="none" stroke="#1CAADA" strokeWidth="3" strokeLinecap="round" />
-            {/* Crown/Swords */}
-            <path d="M42 78 L50 72 L58 78" stroke="#1CAADA" strokeWidth="3" fill="none" strokeLinecap="round" strokeLinejoin="round" />
-            <path d="M50 72 L50 82" stroke="#1CAADA" strokeWidth="3" strokeLinecap="round" />
-          </svg>
-          <div className="flex flex-col">
-            <span className="text-xs font-sans font-black text-slate-800 leading-tight">وزارة الصحة السعودية</span>
-            <span className="text-[9px] font-sans font-black text-[#1CAADA] tracking-normal mt-0.5 leading-none">الوقاية والتوعية الصحية</span>
-          </div>
-        </div>
-      );
-    } else if (partner.name.includes("الهلال الأحمر")) {
-      // Saudi Red Crescent Authority (SRCA) fallback
-      return (
-        <div className="flex items-center gap-3.5 select-none pointer-events-none text-right px-2">
-          <svg className="w-11 h-11 flex-shrink-0" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="50" cy="50" r="45" stroke="#E11D48" strokeWidth="4" />
-            {/* Red Crescent */}
-            <path d="M68 68 C45 68 32 50 32 32 C32 24 35 18 40 14 C24 20 18 38 24 54 C30 70 48 78 68 68 Z" fill="#E11D48" />
-            {/* Crossed swords in gold under palm */}
-            <path d="M44 65 L56 75 M56 65 L44 75" stroke="#DFBA6B" strokeWidth="3" strokeLinecap="round" />
-            {/* Palm */}
-            <path d="M50 42 L50 62" stroke="#10B981" strokeWidth="3.5" strokeLinecap="round" />
-            <path d="M42 46 Q50 50 58 46 M40 52 Q50 56 60 52" stroke="#10B981" strokeWidth="2.5" fill="none" strokeLinecap="round" />
-          </svg>
-          <div className="flex flex-col">
-            <span className="text-xs font-sans font-black text-slate-800 leading-tight">هيئة الهلال الأحمر السعودي</span>
-            <span className="text-[9px] font-sans font-black text-red-600 tracking-normal mt-0.5 leading-none">الاستجابة والتدريب الميداني</span>
-          </div>
-        </div>
-      );
-    } else if (partner.name.includes("التعليم")) {
-      // Ministry of Education (MOE) fallback
-      return (
-        <div className="flex items-center gap-3.5 select-none pointer-events-none text-right px-2">
-          <svg className="w-11 h-11 text-[#56A8A7] flex-shrink-0" viewBox="0 0 100 100" fill="currentColor">
-            {/* Representation of the MOE dots wing logo */}
-            <circle cx="50" cy="50" r="45" fill="none" stroke="#56A8A7" strokeWidth="4" />
-            <g transform="translate(10, 10) scale(0.8)">
-              {/* Central book/wings using dots pattern */}
-              <circle cx="50" cy="25" r="4" fill="#56A8A7" />
-              <circle cx="40" cy="30" r="4" fill="#56A8A7" />
-              <circle cx="60" cy="30" r="4" fill="#56A8A7" />
-              <circle cx="32" cy="38" r="4.5" fill="#56A8A7" />
-              <circle cx="68" cy="38" r="4.5" fill="#56A8A7" />
-              <circle cx="26" cy="48" r="5" fill="#56A8A7" />
-              <circle cx="74" cy="48" r="5" fill="#56A8A7" />
-              {/* Lower row */}
-              <circle cx="50" cy="65" r="5" fill="#56A8A7" />
-              <circle cx="40" cy="58" r="4" fill="#56A8A7" />
-              <circle cx="60" cy="58" r="4" fill="#56A8A7" />
-            </g>
-          </svg>
-          <div className="flex flex-col">
-            <span className="text-xs font-sans font-black text-slate-800 leading-tight">وزارة التعليم</span>
-            <span className="text-[9px] font-sans font-black text-[#56A8A7] tracking-normal mt-0.5 leading-none">الابتكار والتمكين الأكاديمي</span>
-          </div>
-        </div>
-      );
-    } else if (partner.name.includes("الدرعية")) {
-      // Diriyah Gate Development Authority (DGDA) fallback
-      return (
-        <div className="flex items-center gap-3.5 select-none pointer-events-none text-right px-2">
-          <svg className="w-11 h-11 text-[#856404] flex-shrink-0" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="50" cy="50" r="45" stroke="#DFBA6B" strokeWidth="4" />
-            <rect x="25" y="25" width="50" height="50" fill="#DFBA6B" opacity="0.1" />
-            {/* Salwa Palace outline */}
-            <path d="M30 70 L30 50 L40 45 L40 55 L50 50 L50 40 L60 38 L65 48 L70 45 L70 70 Z" fill="none" stroke="#DFBA6B" strokeWidth="3" strokeLinejoin="round" />
-            <path d="M50 25 L50 35 M45 28 L55 28" stroke="#DFBA6B" strokeWidth="2" strokeLinecap="round" />
-            {/* Little triangular patterns */}
-            <path d="M35 55 L37 58 L39 55 M45 45 L47 48 L49 45 M65 52 L67 55 L69 52" stroke="#DFBA6B" strokeWidth="1.5" />
-          </svg>
-          <div className="flex flex-col">
-            <span className="text-xs font-sans font-black text-slate-800 leading-tight">هيئة تطوير بوابة الدرعية</span>
-            <span className="text-[9px] font-sans font-black text-[#856404] tracking-normal mt-0.5 leading-none">مبادرات المسؤولية المجتمعية</span>
-          </div>
-        </div>
-      );
-    } else if (partner.name.includes("العقار")) {
-      // REGA fallback
-      return (
-        <div className="flex items-center gap-3.5 select-none pointer-events-none text-right px-2">
-          <svg className="w-11 h-11 text-brand-academic flex-shrink-0" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="50" cy="50" r="45" stroke="#1e3c58" strokeWidth="4" />
-            {/* Modern geometric building-palm */}
-            <path d="M40 75 L40 45 L50 35 L60 45 L60 75 Z" fill="#1e3c58" opacity="0.2" />
-            <path d="M40 75 L40 45 L50 35 L60 45 L60 75" stroke="#1e3c58" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" />
-            {/* Palm frond lines top */}
-            <path d="M50 35 L50 20 M50 28 L40 22 M50 28 L60 22 M50 24 L43 17 M50 24 L57 17" stroke="#56A8A7" strokeWidth="2.5" strokeLinecap="round" />
-            <circle cx="50" cy="55" r="4" fill="#56A8A7" />
-          </svg>
-          <div className="flex flex-col">
-            <span className="text-xs font-sans font-black text-slate-800 leading-tight">الهيئة العامة للعقار</span>
-            <span className="text-[9px] font-sans font-black text-slate-500 tracking-normal mt-0.5 leading-none">شريك التنظيم العقاري والاستقرار</span>
-          </div>
-        </div>
-      );
-    } else if (partner.name.includes("سلمان")) {
-      // KSrelief fallback
-      return (
-        <div className="flex items-center gap-3.5 select-none pointer-events-none text-right px-2">
-          <svg className="w-11 h-11 flex-shrink-0" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="50" cy="50" r="45" stroke="#10B981" strokeWidth="4" />
-            {/* Global globe curved lines */}
-            <circle cx="50" cy="50" r="28" stroke="#10B981" strokeWidth="1.5" opacity="0.4" />
-            <path d="M50 22 C51 32 51 68 50 78 M22 50 C32 51 68 51 78 50" stroke="#10B981" strokeWidth="1.5" opacity="0.4" />
-            {/* Leaf cradling the globe */}
-            <path d="M22 68 C22 68 45 78 68 62 C50 62 38 50 22 68 Z" fill="#10B981" />
-            {/* Golden Palm */}
-            <path d="M50 35 L50 50 M44 38 Q50 41 56 38" stroke="#DFBA6B" strokeWidth="2" strokeLinecap="round" />
-          </svg>
-          <div className="flex flex-col">
-            <span className="text-xs font-sans font-black text-slate-800 leading-tight">مركز الملك سلمان للإغاثة</span>
-            <span className="text-[9px] font-sans font-black text-green-600 tracking-normal mt-0.5 leading-none">العون الدولي الإنساني</span>
-          </div>
-        </div>
-      );
-    } else if (partner.name.includes("الأعضاء")) {
-      // SCOT (Saudi Center for Organ Transplantation) fallback
-      return (
-        <div className="flex items-center gap-3.5 select-none pointer-events-none text-right px-2">
-          <svg className="w-11 h-11 flex-shrink-0" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="50" cy="50" r="45" stroke="#06B6D4" strokeWidth="4" />
-            {/* Heart shape hybrid with palm branches */}
-            <path d="M50 35 C42 22 25 25 25 45 C25 65 50 78 50 78 C50 78 75 65 75 45 C75 25 58 22 50 35 Z" fill="#06B6D4" opacity="0.15" stroke="#06B6D4" strokeWidth="3" />
-            <path d="M50 42 L50 65" stroke="#06B6D4" strokeWidth="3.5" strokeLinecap="round" />
-            <path d="M42 48 Q50 52 58 48 M40 55 Q50 59 60 55" stroke="#06B6D4" strokeWidth="2.5" fill="none" strokeLinecap="round" />
-          </svg>
-          <div className="flex flex-col">
-            <span className="text-xs font-sans font-black text-slate-800 leading-tight">المركز السعودي لزراعة الأعضاء</span>
-            <span className="text-[9px] font-sans font-black text-[#06B6D4] tracking-normal mt-0.5 leading-none">تطوير الرعاية والوقاية الطبية</span>
-          </div>
-        </div>
-      );
-    }
-
-    // Default general governmental fallback if not matched
+  if (!partner.logoUrl || hasError) {
     return (
-      <div className="flex items-center gap-3.5 select-none pointer-events-none text-right px-2">
-        <svg className="w-11 h-11 text-brand-teal flex-shrink-0" viewBox="0 0 100 100" fill="currentColor">
-          <circle cx="50" cy="50" r="45" fill="none" stroke="#56A8A7" strokeWidth="3" />
-          <path d="M50 25 L50 75 M35 50 L65 50" stroke="#56A8A7" strokeWidth="4" strokeLinecap="round" />
-          <circle cx="50" cy="50" r="10" fill="#DFBA6B" />
-        </svg>
+      <div className="flex items-center gap-3 select-none pointer-events-none text-right px-1">
+        <div className="w-10 h-10 rounded-xl bg-slate-100 border border-slate-200/60 flex items-center justify-center text-slate-400 font-black text-[10px] font-mono shadow-inner shrink-0">
+          Logo
+        </div>
         <div className="flex flex-col">
-          <span className="text-xs font-sans font-black text-slate-800 leading-tight">{partner.name}</span>
-          <span className="text-[9px] font-sans text-slate-400 tracking-normal mt-0.5 leading-none">{partner.subName}</span>
+          <span className="text-xs font-sans font-black text-slate-700 leading-tight">شعار شريك النجاح</span>
+          <span className="text-[9px] font-sans text-slate-400 mt-0.5 leading-none">{partner.subName}</span>
         </div>
       </div>
     );
   }
+
+
 
   return (
     <img
@@ -1449,12 +1272,13 @@ export default function App() {
                 </div>
               </section>
             )}
+
+            {activeSection === "section-login" && (
+              <AdminPortalBox />
+            )}
           </motion.div>
         </AnimatePresence>
       </main>
-
-      {/* ADMINISTRATION AND ENROLLMENT PORTAL BOX */}
-      <AdminPortalBox />
 
       {/* COMPACT FOOTER FOOTAGE */}
       <footer
@@ -1680,6 +1504,15 @@ export default function App() {
             </p>
             <div className="flex items-center gap-3 justify-center md:justify-end text-slate-500 shrink-0">
               <span className="hover:text-slate-400 transition-colors">جامعة الملك سعود</span>
+              <span className="text-slate-600">|</span>
+              <button
+                id="footer-login-btn"
+                onClick={() => scrollToSection("section-login")}
+                className="hover:text-brand-teal transition-colors focus:outline-none cursor-pointer flex items-center gap-1 text-[11px]"
+              >
+                <ShieldCheck className="w-3.5 h-3.5 text-emerald-600 animate-pulse" />
+                <span>بوابة الدخول</span>
+              </button>
             </div>
           </div>
         </div>
