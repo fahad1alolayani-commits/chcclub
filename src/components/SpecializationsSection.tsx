@@ -218,7 +218,7 @@ export default function SpecializationsSection() {
   return (
     <section 
       id="section-majors" 
-      className="py-24 bg-gradient-to-b from-[#e8f6f0] via-white to-[#f0f9f5] border-y border-emerald-100/30 relative scroll-mt-20 overflow-hidden min-h-[82vh] flex flex-col justify-center"
+      className="py-16 md:py-24 bg-gradient-to-b from-[#e8f6f0] via-white to-[#f0f9f5] border-y border-emerald-100/30 relative scroll-mt-20 overflow-hidden min-h-[82vh] flex flex-col justify-center"
       dir="rtl"
     >
       {/* Background Decorative Graphic Spheres */}
@@ -360,7 +360,7 @@ export default function SpecializationsSection() {
                     >
                       {/* Step Circle Bubble */}
                       <div 
-                        className={`w-9 h-9 sm:w-11 sm:h-11 rounded-full border-2 flex items-center justify-center transition-all duration-300 relative z-10 active:scale-90 ${
+                        className={`w-10 h-10 sm:w-11 sm:h-11 rounded-full border-2 flex items-center justify-center transition-all duration-300 relative z-10 active:scale-90 ${
                           isSelected
                             ? "bg-slate-900 border-slate-900 text-white shadow-md ring-4 ring-slate-900/15 scale-105"
                             : isPassed
@@ -368,8 +368,8 @@ export default function SpecializationsSection() {
                             : "bg-white border-slate-300 text-slate-500 hover:border-slate-400 hover:text-slate-700"
                         }`}
                       >
-                        <span className="text-[11px] sm:text-xs font-black font-sans">
-                          {idx === 4 ? "الامتياز" : `س ${y.yearNum}`}
+                        <span className="text-[10px] sm:text-xs font-black font-sans px-1 truncate leading-none">
+                          {idx === 4 ? "امتياز" : `سنة ${y.yearNum}`}
                         </span>
                       </div>
 

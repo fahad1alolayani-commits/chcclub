@@ -69,31 +69,43 @@ const TikTokIcon = ({ className = "w-4.5 h-4.5" }: { className?: string }) => (
 
 const partnersList = [
   {
-    name: "هيئة الهلال الأحمر السعودي",
+    name: "شعار",
+    subName: "مساحة مخصصة لشعار شريك النجاح ١",
     bg: "bg-slate-50 border-slate-200",
-    logoUrl: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABwKC6fAAAAelBMVEUAAAD////FxcWurq6goKDv7++BgYF/f3+vr69ubm6KiorExMS5ublra2uXl5d0dHSv r69hYWGfn5+Li4uNjY19fX2Ojo6Tk5OdnZ14eHhsbGxpaWlpaWlpaWlpaWlpaWlpaWlp aWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlhVv9KAAAAHnRSTlMAESIzM0RVZnd3iImKjI2O k5SVlpmand7u7/Dx8vP09fb3i7scAAACi0lEQVRoQ+2W23LCMBBFEwIhCYHQG9yS0/// rTYZpE6bZgI7D86TzD6MrtXpSg6Hw+FwOBwO/4vIGYp8A6G/vHh6v1LkVwSshNAGVfUo r0D6XqR7ZzM83or8VOBgK2AbeEPhS4HbyGfQ3ApsC3x68GNoX0B9gZ8e+NfXAnSreL3C deUvUDoXfHbg8Z868f0G8nI89tG/90GvofASeAsFXwOvgfcS+BwE18BPIPZ8H+9eBvM0 4LwMfM7v6b1U99L6U6T+O63vE6Dvev006LtfPwX9/NdfP/mU/mP+fVv/tX2/6Z8m/9T8 /fE/ffL5V598/tUnn3/99fevX339fscf9Y989f6T/6h/mX/fVv+16f9m/5f6v+Xv6u9/ Mf+4f/7p98//9Cnnf/v6R94fOf9Z/8j5t/Uf6/fH/8L6v+X7p98///T7t9//6f1Xzv/6 sff68fevv3789fuvn37/0+dfOf9Xzv/V+0/Wf6z/WL8fP/3++afPv3L+V85/7P+m90fO f9b7I+c/6/f6+VfPv/b+/U//Xv83+Vf9X7p/pPuvff+1f98/ev5v3R/798e/V/v3xv7+ sfevX/v3xv7+9fuvX3399fuvH//u/bH3V+8f+0/Wv3b8I90f+/fX3b++v69/b+yvfv8U rV9F6ldf/+S99Dfvpbv3p0b96p16H6V+RulPkb6V8k788D70O8p76b10BbyBglX38Bq6 f0UFrAb6v+uB79RPoVun6v6T38v07/y5A9p3p9fQH6A/pSreY0vG4XA4HA6Hw+FffwAd kBA76vHBAgAAAABJRU5ErkJggg=="
+    logoUrl: ""
   },
   {
-    name: "المركز السعودي لزراعة الأعضاء",
+    name: "شعار",
+    subName: "مساحة مخصصة لشعار شريك النجاح ٢",
     bg: "bg-slate-50 border-slate-200",
-    logoUrl: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABwKC6fAAAAeFBMVEUAAAD////FxcWgoKCurq6v r69ubm6/v79hYWGfn5+Xl5eLi4uNjY19fX1ra2uOjo6vr690dHSKiorExMS5ubmTk5Od nZ2vr6+Ojo6enp6Pj4+Tk5OWlpaXl5eampqbm5ucnJycnJycnJycnJycnJycnJycnJyc nJz5N/ZJAAAAH3RSTlMAESIzM0RVZnd3iIuMjo+TlJWWmZqcnZ6foKGise7v8Bcl8gAA Ap5JREFUeNrtl9tywyAMRE0wXAgEAsb0hUD//7faZIDU6bSdwE6fO/Mo6Gg0WkkOh8Ph cDgcDofD//4AdA9CPoDwYI8OshfCIwJWQuigXv0oOxeid7bi7g6wF8IOAoetgG3gDoWv Be4id1CcCmQL3Dpwb9WtoDoXmAtwd6YFKBfwdIU/fAnQOfB2h893wMcd/jwIvw5A3g6g b/uH3tD+Noj7CLeR6BFuIuB9EHIDPofC9fI9Xp0GfBrwNOCxX0+v6buXOp6ivofWv0Xq h6AnKHzX8NPD62vY90/vYf9p/8ff79m/zL+v6z9m/zL/WfNPMX9Zf9/Wf8z8WfPPp3/K +Z/u/zL+rv5Tf390/8T/1fyfPvlS/T/6vMv++6b+Yv6t/jL/1P+lf/67z7tU/6P939Yf ufyof+T+S/fPl9//fPrvPvdS/Yv9X+b/Nv8T/e+f++79N/1/Uv+t+8faf+z+Rfpfvv9y /vPrL59+qe/2fdf5p/dfdf7I/W+df+X8Z82/ev7b+aPnn+v+Y99P8v6985/Vv7f7R86f Of/Z/XvNf9b/sfsXnT/7/mPff1TfQ/cfu/6l+h45f3T/ofOPXL/X+VPnXzn9t+r7+u9P rX/p/FPnv6v/0fmjP/8m788Zf8v+m91ftf+p62ftv2v9Z+c/q37Z/pGfP8b7987ftX6S 8yfv/6p+1PlH+pf9U9fPVf2s62etv86ffK76WdWfFvSfq/4Udf6x+9fqX7p+rupnrX/p +lfNP6v686qftf6l6l9p/6r9Z9XPMX9O9aeYfxP691b1r1I/YfVTr36Wz1bXf+P0b1Y/ tU4f1btd9aXUf1U/or6XshO//Bv6UeSjyMeQdyF0AnIDvIP67kfWpUPXpXr3i9/L8H/p iHYE/Sld/x2/Mv6A//9qHw7Hjx0Oh8PhcDgcfgTfE38QZf9vI6cAAAAASUVORK5CYII="
+    logoUrl: ""
   },
   {
-    name: "وزارة التعليم",
+    name: "شعار",
+    subName: "مساحة مخصصة لشعار شريك النجاح ٣",
     bg: "bg-slate-50 border-slate-200",
-    logoUrl: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABwKC6fAAAAe1BMVEUAAAD////FxcWgoKCurq6v r69ubm6/v7+Xl5dYWFifn5+Li4uNjY1ra2uOjo6vr690dHSKiorExMS5ubmTk5OdnZ2v r6+Ojo6enp6Pj4+Tk5OWlpaXl5eampqbm5ucnJycnJycnJycnJycnJycnJycnJycnJyc nJycnJy55938AAAAHnRSTlMAESIzM0RVZnd3iImKjI2Ok5SVlpmand7u7/Dx8vP09fb3 i7scAAACb0lEQVRoQ+2W2XLCMAxFEwIhCYHQG9yS0v//rTYZpE6bZgI7D86TzD6MrtXp SpasvLz87w/AA0X8gIg/0Hq/EuFXCNoIoo/S70fRRpCtk5lwO4i6FdErEPoI0C78A4Uu At1GvobkV6B9BL0Oek8B9QV6vffvg0B1S+939H6D19fwF4idCz478Phrnfj9AdYqDof4 /6wTX0NhF8Eqgl6EtRFgI+A9CDv7Rdp1GuBpwDThvAx89uvpHbX7UodT9N9p/Z8gYI0K fqX46SGsDWhNof8X8BqGfh6j/ofUf6f9N6n/TvtvvH+H+m9W//wXz7+y/r/3D7X/zvW/ cf1vun8WvD+qf8b7V9Z/ZP1/779v8wffnzn/kfUfm/+8+S8fP7/+7fMfm/++/Tfs/+n+ S/dfPn/y+ffPf9T+Yf23Xz+LfjYcf2T9H9ffL3n//vH3753/vO7f9/0i5j+v/0v3z/vI +6v6WfXPXj/X/SOW/+b8o+fftn6R80ct/8j6o/ovmX/l/FH37x89/7b1Xzn/p8+/Xz9q /U/Xz6p/Vf+T9bMdf+z+kelfpf9N++9c/6b9b1p/Xf839W/p/mvtX/f+a++vvL/y/sr9 M+eP7p/df/P+S9evdf/e6986/+z5V/XvNX90/6Hz313/fP3zV86fuP+s/t31P1v/0vVz rX/p+mfXz1b98/UvXb/W/XvXf/f++frnr5//v/un619Z/3/3j7V/pfuT909U/VzVz1X9 m/Z/sH/d/bOuf3f/YffPuP/h989W/cz7H6T+Zf1H1j97/Uzvn6/++/vXdf/N/c/Xv9n+ zf7T9W/a/0bVP/P+96r+zftfrf/Z+pevX/X+N67/7fUvVv83gT8Bfwn4C8gX6E9R1X8m ZVv88H/wV1T4KvIVlKzWh6/AaxituvvXUPurUHgN+T/Xg9fUn4S2Ttf996+vof+E8fB8 2R4Oh8PhcDj86xfGvBD97RkZ+wAAAABJRU5ErkJggg=="
+    logoUrl: ""
   },
   {
-    name: "الهيئة العامة للعقار",
+    name: "شعار",
+    subName: "مساحة مخصصة لشعار شريك النجاح ٤",
     bg: "bg-slate-50 border-slate-200",
-    logoUrl: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABwKC6fAAAAe1BMVEUAAAD////FxcWgoKCurq6v r69ubm6/v7+Xl5dYWFifn5+Li4uNjY1ra2uOjo6vr690dHSKiorExMS5ubmTk5OdnZ2v r6+Ojo6enp6Pj4+Tk5OWlpaXl5eampqbm5ucnJycnJycnJycnJycnJycnJycnJycnJyc nJycnJy55938AAAAHnRSTlMAESIzM0RVZnd3iImKjI2Ok5SVlpmand7u7/Dx8vP09fb3 i7scAAACb0lEQVRoQ+2W2XLCMAxFEwIhCYHQG9yS0v//rTYZpE6bZgI7D86TzD6MrtXp SpasvLz87w/AA0X8gIg/0Hq/EuFXCNoIoo/S70fRRpCtk5lwO4i6FdErEPoI0C78A4Uu At1GvobkV6B9BL0Oek8B9QV6vffvg0B1S+939H6D19fwF4idCz478Phrnfj9AdYqDof4 /6wTX0NhF8Eqgl6EtRFgI+A9CDv7Rdp1GuBpwDThvAx89uvpHbX7UodT9N9p/Z8gYI0K fqX46SGsDWhNof8X8BqGfh6j/ofUf6f9N6n/TvtvvH+H+m9W//wXz7+y/r/3D7X/zvW/ cf1vun8WvD+qf8b7V9Z/ZP1/779v8wffnzn/kfUfm/+8+S8fP7/+7fMfm/++/Tfs/+n+ S/dfPn/y+ffPf9T+Yf23Xz+LfjYcf2T9H9ffL3n//vH3753/vO7f9/0i5j+v/0v3z/vI +6v6WfXPXj/X/SOW/+b8o+fftn6R80ct/8j6o/ovmX/l/FH37x89/7b1Xzn/p8+/Xz9q /U/Xz6p/Vf+T9bMdf+z+kelfpf9N++9c/6b9b1p/Xf839W/p/mvtX/f+a++vvL/y/sr9 M+eP7p/df/P+S9evdf/e6986/+z5V/XvNX90/6Hz313/fP3zV86fuP+s/t31P1v/0vVz rX/p+mfXz1b98/UvXb/W/XvXf/f++frnr5//v/un619Z/3/3j7V/pfuT909U/VzVz1X9 m/Z/sH/d/bOuf3f/YffPuP/h989W/cz7H6T+Zf1H1j97/Uzvn6/++/vXdf/N/c/Xv9n+ Zf1H1j97/Uzvn6/++/vXdf/N/c/Xv9n+zf7T9W/a/0bVP/P+96r+zftfrf/Z+pevX/X+ N67/7fUvVv83gT8Bfwn4C8gX6E9R1X8m ZVv88H/wV1T4KvIVlKzWh6/AaxituvvXUPurUHgN+T/Xg9fUn4S2Ttf996+vof+E8fB8 2R4Oh8PhcDj86xfGvBD97RkZ+wAAAABJRU5ErkJggg=="
+    logoUrl: ""
   },
   {
-    name: "هيئة تطوير بوابة الدرعية",
+    name: "شعار",
+    subName: "مساحة مخصصة لشعار شريك النجاح ٥",
     bg: "bg-slate-50 border-slate-200",
-    logoUrl: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABwKC6fAAAAelBMVEUAAAD////FxcWurq6goKDv7++BgYF/f3+vr69ubm6KiorExMS5ublra2uXl5d0dHSv r69hYWGfn5+Li4uNjY19fX2Ojo6Tk5OdnZ14eHhsbGxpaWlpaWlpaWlpaWlpaWlpaWlp aWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlhVv9KAAAAHnRSTlMAESIzM0RVZnd3iImKjI2Ok5SVlpmand7u7/Dx8vP09fb3i7scAAACi0lEQVRoQ+2W2u2CMAxFwYCQ BN6iW3T//9bKBAqdtpCAnwfmSWMfRtdaZ0oOh8PhcDgcDof/vYw8QMwFBP/y4uj9Vphf IbwRRL+F1YeyP4v8lZmwO4g8iugjEPoIoF1EDxS6Gfka+VvIPhfaFvLqId9L7mX6vXTf i+mZ6ZfufXofM/3Svl/r76m+v+b7Z/t+zffP9v2a75/t+zXfP9v3a75/tv9XmB+i+WGm X9b9N/6fdf/Z+p+s/5j/t+Zfrf692/9N/p3W/wn4Xajvef28DPX819b3X1vff219/7X1 /dfWt/X/pP6z/b/V/239Y+v/1v2x9V/X/0zXz3X9XNXPun7W+mvdf9f9d9efv37++/X/ sH/p+6P7k+dfvX+m+3Puj9X3mD/n/lj1q/r3bX/e9fOtX1b/su7vHf/c8fPWz6p/bf3j 75/t/Wvv33v9a+8fef/q86+df9b8s6qfaf9H9R+b/7z5N+7ftv7N+p+uf+P66/qf7L92 /er6ta6fa/2fXf+961+7ftb1r1z/tfWvXX/++vPv1798/frvX7/++vXrv3/9+vfXv/7+ 9euvX339+u/fX//699f/L8E/Yv4S8ofID8FfiN+F9FvR9ZvpV8L0W2G9FXv3R9YtI88o 70LeR3kvfS9dgVCHbofZ38NbaH6FYFp7/9TrfxUBL17Dqnr0FPr/bBOfQ8AXEfBZeN8f gF7I8T8
+    logoUrl: ""
+  },
+  {
+    name: "شعار",
+    subName: "مساحة مخصصة لشعار شريك النجاح ٦",
+    bg: "bg-slate-50 border-slate-200",
+    logoUrl: ""
   }
 ];
+
 function PartnerLogo({ partner }: { partner: typeof partnersList[number] }) {
   const [hasError, setHasError] = useState(false);
 
@@ -349,12 +361,12 @@ export default function App() {
   const menuItems = [
     { label: t.navHome, id: "section-home" },
     { label: t.navAbout, id: "section-about" },
+    { label: t.navLeadership, id: "section-leadership" },
     { label: "التخصصات", id: "section-majors" },
     { label: t.navEvents, id: "section-events" },
+    { label: "الإنجازات", id: "section-achievements" },
     { label: "المجلة", id: "section-magazine" },
     { label: "حاسبة الكتلة (BMI)", id: "section-bmi" },
-    { label: "الإنجازات", id: "section-achievements" },
-    { label: t.navLeadership, id: "section-leadership" },
     { label: t.navJoin, id: "section-join", highlight: true },
   ];
 
@@ -435,32 +447,44 @@ export default function App() {
 
         {/* Mobile Expanded Menu Drawer */}
         {mobileMenuOpen && (
-          <div
-            id="mobile-menu-drawer"
-            className="lg:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-xl px-4 py-6 space-y-4 animate-fadeIn"
-          >
-            <div className="flex flex-col gap-2">
-              {menuItems.map((item) => {
-                const isActive = activeSection === item.id;
-                return (
-                  <button
-                    id={`mobile-nav-link-${item.id}`}
-                    key={item.id}
-                    onClick={() => scrollToSection(item.id)}
-                    className={`w-full py-3 px-4 font-sans font-bold text-sm rounded-xl transition-all text-right ${
-                      item.highlight
-                        ? "bg-gradient-to-r from-brand-blue to-brand-teal text-white text-center shadow-md active:scale-95"
-                        : isActive
-                        ? "text-brand-blue bg-brand-blue/10 px-5 font-black"
-                        : "text-slate-700 hover:bg-slate-100/60"
-                    }`}
-                  >
-                    {item.label}
-                  </button>
-                );
-              })}
+          <>
+            {/* Dark blur overlay backdrop behind mobile menu */}
+            <div
+              id="mobile-menu-backdrop"
+              className="lg:hidden fixed inset-0 top-[60px] md:top-[72px] bg-slate-950/40 backdrop-blur-xs z-40 transition-opacity duration-300 animate-fadeIn"
+              onClick={() => setMobileMenuOpen(false)}
+            />
+            
+            <div
+              id="mobile-menu-drawer"
+              className="lg:hidden absolute top-full left-0 right-0 bg-white/98 backdrop-blur-lg border-b border-slate-200/90 shadow-2xl px-4 py-6 space-y-4 animate-fadeIn z-50 rounded-b-2xl border-t border-slate-100/50"
+            >
+              <div className="flex flex-col gap-1.5">
+                {menuItems.map((item) => {
+                  const isActive = activeSection === item.id;
+                  return (
+                    <button
+                      id={`mobile-nav-link-${item.id}`}
+                      key={item.id}
+                      onClick={() => scrollToSection(item.id)}
+                      className={`w-full py-3 px-4 font-sans font-bold text-sm rounded-xl transition-all text-right flex items-center justify-between cursor-pointer ${
+                        item.highlight
+                          ? "bg-gradient-to-r from-brand-blue to-brand-teal text-white justify-center shadow-lg shadow-brand-blue/15 hover:opacity-95 active:scale-[0.98] transform mt-2"
+                          : isActive
+                          ? "text-brand-blue bg-brand-blue/10 px-5 font-black"
+                          : "text-slate-700 hover:bg-slate-100/60 active:bg-slate-50"
+                      }`}
+                    >
+                      <span>{item.label}</span>
+                      {!item.highlight && (
+                        <ChevronRight className={`w-3.5 h-3.5 transition-transform ${isActive ? "text-brand-blue rotate-180" : "text-slate-350 opacity-40"}`} />
+                      )}
+                    </button>
+                  );
+                })}
+              </div>
             </div>
-          </div>
+          </>
         )}
       </header>
 
@@ -576,7 +600,7 @@ export default function App() {
                           <Users className="w-5 h-5" />
                         </div>
                         <p className="font-mono text-3xl md:text-4xl font-extrabold text-[#56A8A7] tracking-tight">
-                          15,000+
+                          4,000+
                         </p>
                         <p className="text-xs md:text-sm font-semibold opacity-90 text-slate-300 font-sans">
                           {t.statsBeneficiaries}
@@ -592,7 +616,7 @@ export default function App() {
                           <Activity className="w-5 h-5" />
                         </div>
                         <p className="font-mono text-3xl md:text-4xl font-extrabold text-[#56A8A7] tracking-tight">
-                          35+
+                          20+
                         </p>
                         <p className="text-xs md:text-sm font-semibold opacity-90 text-slate-300 font-sans">
                           {t.statsCampaigns}
@@ -624,7 +648,7 @@ export default function App() {
                           <Clock className="w-5 h-5" />
                         </div>
                         <p className="font-mono text-3xl md:text-4xl font-extrabold text-[#56A8A7] tracking-tight">
-                          3,500+
+                          1,000+
                         </p>
                         <p className="text-xs md:text-sm font-semibold opacity-90 text-slate-300 font-sans">
                           {t.statsHours}
@@ -1103,11 +1127,11 @@ export default function App() {
                       حصاد العطاء والتميز الأكاديمي والمجتمعي
                     </span>
                     <h2 className="font-sans font-black text-2xl md:text-4xl text-brand-academic">
-                      إنجازات نادي صحة المجتمع الفخرية
+                      مسيرة إنجازات نادي صحة المجتمع
                     </h2>
                     <div className="h-1.5 w-16 bg-brand-teal rounded-full mx-auto" />
                     <p className="text-xs md:text-sm text-slate-550 pt-2">
-                      بخطوات هادفة ومؤشرات قياس مدروسة، نفخر بمسيرة حافلة لخدمة طلبة كلية العلوم الطبية التطبيقية جامعة الملك سعود وتعزيز وعي المجتمع صحياً.
+                      بخطوات هادفة ومؤشرات قياس مدروسة، نفخر بمسيرة حافلة بالعطاء والتأثير الإيجابي لتعزيز الوعي الصحي ونشر المعرفة والأنشطة الوقائية الموثوقة لجميع أفراد المجتمع والمنظومة الأكاديمية بجامعة الملك سعود.
                     </p>
                   </div>
 
@@ -1118,14 +1142,14 @@ export default function App() {
                       id="achievement-card-1"
                       className="bg-[#f8fafc]/50 hover:bg-white p-6 rounded-2xl border border-slate-200/60 hover:border-brand-teal/40 transition-all duration-300 hover:shadow-lg shadow-sm space-y-4 group"
                     >
-                      <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center text-amber-650 group-hover:scale-105 transition-transform">
+                      <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center text-amber-600 group-hover:scale-105 transition-transform">
                         <Trophy className="w-6 h-6" />
                       </div>
                       <h3 className="font-sans font-black text-lg text-brand-academic">
-                        جائزة عمادة شؤون الطلاب للتميز والريادة
+                        أفضل نادٍ طلابي لعام 2026
                       </h3>
-                      <p className="text-xs md:text-sm text-slate-500 font-sans leading-relaxed font-medium">
-                        تُوّج النادي رسميًا بالدرع الذهبي وجائزة جامعة الملك سعود كأفضل مبادرة طلابية تطوعية للعام ٢٠٢٦م نظير الأثر الفعّال للحملات والمشاركة الأكاديمية والميدانية المتميزة لطلبة العلوم الطبية التطبيقية.
+                      <p className="text-xs md:text-sm text-slate-550 font-sans leading-relaxed font-medium">
+                        حصل نادي صحة المجتمع على المركز الأول وجائزة أفضل نادٍ طلابي على مستوى جامعة الملك سعود لعام 2026م في دورتها السنوية، تحقيقاً لإنجاز استثنائي في أول عام دراسي بعد دمج وتأسيس النادي.
                       </p>
                     </div>
 
@@ -1134,14 +1158,14 @@ export default function App() {
                       id="achievement-card-2"
                       className="bg-[#f8fafc]/50 hover:bg-white p-6 rounded-2xl border border-slate-200/60 hover:border-brand-teal/40 transition-all duration-300 hover:shadow-lg shadow-sm space-y-4 group"
                     >
-                      <div className="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center text-emerald-600 group-hover:scale-105 transition-transform">
-                        <ShieldCheck className="w-6 h-6" />
+                      <div className="w-12 h-12 bg-[#56A8A7]/10 rounded-xl flex items-center justify-center text-[#56A8A7] group-hover:scale-105 transition-transform">
+                        <BookOpen className="w-6 h-6" />
                       </div>
                       <h3 className="font-sans font-black text-lg text-brand-academic">
-                        اعتماد طبي مع منشآت صحية كبرى
+                        توزيع المطويات التوعوية
                       </h3>
-                      <p className="text-xs md:text-sm text-slate-500 font-sans leading-relaxed font-medium">
-                        وقّع النادي بروتوكولات تعاون رسمية مع مراكز طبية وصحية كبرى، مثل مركز السكري بمدينة الملك سعود الطبية، مما ساهم في تقديم محاضرات براهين علمية نوعية وتدريب طلاب النادي على مهارات السكر في بيئة مهنية حقيقية.
+                      <p className="text-xs md:text-sm text-slate-550 font-sans leading-relaxed font-medium">
+                        توزيع وتعميم المطويات والمنشورات التثقيفية والوقائية التي تعدها اللجان المختصة بالنادي للزوار من مختلف فئات المجتمع بهدف رفع التوعية الصحية العامة ونشر ثقافة سلوكية وغذائية وقائية سليمة دون الحاجة لإحصاء شكلي للكمية.
                       </p>
                     </div>
 
@@ -1150,14 +1174,14 @@ export default function App() {
                       id="achievement-card-3"
                       className="bg-[#f8fafc]/50 hover:bg-white p-6 rounded-2xl border border-slate-200/60 hover:border-brand-teal/40 transition-all duration-300 hover:shadow-lg shadow-sm space-y-4 group"
                     >
-                      <div className="w-12 h-12 bg-[#1CAADA]/10 rounded-xl flex items-center justify-center text-[#1CAADA] group-hover:scale-105 transition-transform">
+                      <div className="w-12 h-12 bg-[#56A8A7]/10 rounded-xl flex items-center justify-center text-[#56A8A7] group-hover:scale-105 transition-transform">
                         <Users className="w-6 h-6" />
                       </div>
                       <h3 className="font-sans font-black text-lg text-brand-academic">
-                        أكثر من ٥,٢٠٠ مستفيد مباشر
+                        تأهيل الكوادر والقيادات الطلابية
                       </h3>
-                      <p className="text-xs md:text-sm text-slate-500 font-sans leading-relaxed font-medium">
-                        خدمة وفحص آلاف الأفراد من طلاب الجامعة وزائري المجمعات العامة والتجارية بالرياض، وقياس مؤشرات كتلة الجسم والضغط وتقديم إرشادات مجانية فردية من خلال أكثر من ٦ محطات فحص طبي وتوعية ميدانية شاملة.
+                      <p className="text-xs md:text-sm text-slate-550 font-sans leading-relaxed font-medium">
+                        توفير بيئة تدريبية وعملية تفاعلية للطلاب والطالبات لصقل مهارات الإلقاء وتخطيط الأنشطة الصحية والعمل كفريق متماسك وتأهيلهم التام لشغل مناصب قيادية وميدانية مميزة في مستقبلهم الصحي الإكلينيكي.
                       </p>
                     </div>
 
@@ -1166,14 +1190,14 @@ export default function App() {
                       id="achievement-card-4"
                       className="bg-[#f8fafc]/50 hover:bg-white p-6 rounded-2xl border border-slate-200/60 hover:border-brand-teal/40 transition-all duration-300 hover:shadow-lg shadow-sm space-y-4 group"
                     >
-                      <div className="w-12 h-12 bg-pink-500/10 rounded-xl flex items-center justify-center text-pink-600 group-hover:scale-105 transition-transform">
-                        <Heart className="w-6 h-6" />
+                      <div className="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center text-emerald-600 group-hover:scale-105 transition-transform">
+                        <Calendar className="w-6 h-6" />
                       </div>
                       <h3 className="font-sans font-black text-lg text-brand-academic">
-                        إلهام العادات الوقائية والصحية
+                        الفعاليات الجماهيرية والشراكات
                       </h3>
-                      <p className="text-xs md:text-sm text-slate-500 font-sans leading-relaxed font-medium">
-                        توزيع ونشر ما يربو على ٣,٠٠٠ مطوية وإصدار رقمي معتمد بباركود تفاعلي للعموم، يُعنى بتنظيم الوجبات ومكافحة السمنة وتوفير البدائل الصحية والمحليات الآمنة مما نتج عنه تقليل نسبي لمعدلات الاستهلاك العشوائي للغلوكوز.
+                      <p className="text-xs md:text-sm text-slate-550 font-sans leading-relaxed font-medium">
+                        بناء وصياغة شراكات عمل وتكامل استراتيجي مع جهات حكومية وخاصة متخصصة لإطلاق مبادرات ممتدة لخدمة المجتمع وتسهيل حضور الكادر الطلابي الصحي بشكل لائق بالهوية الجامعية العريقة.
                       </p>
                     </div>
 
@@ -1182,14 +1206,14 @@ export default function App() {
                       id="achievement-card-5"
                       className="bg-[#f8fafc]/50 hover:bg-white p-6 rounded-2xl border border-slate-200/60 hover:border-brand-teal/40 transition-all duration-300 hover:shadow-lg shadow-sm space-y-4 group"
                     >
-                      <div className="w-12 h-12 bg-cyan-500/10 rounded-xl flex items-center justify-center text-cyan-600 group-hover:scale-105 transition-transform">
+                      <div className="w-12 h-12 bg-[#56A8A7]/10 rounded-xl flex items-center justify-center text-[#56A8A7] group-hover:scale-105 transition-transform">
                         <TrendingUp className="w-6 h-6" />
                       </div>
                       <h3 className="font-sans font-black text-lg text-brand-academic">
-                        تخطي ٤,٢٠٠ ساعة تطوعية معتمدة
+                        تجاوز 1,000 ساعة تطوعية معتمدة
                       </h3>
                       <p className="text-xs md:text-sm text-slate-500 font-sans leading-relaxed font-medium">
-                        تسجيل وتوثيق آلاف الساعات التدريبية والتطوعية لطلاب الكلية عبر منصة التطوع الوطني المعتمدة رسميًا، مما يعزز مهارات الطلبة العملية وتأهيلهم لسوق العمل الصحي بكفاءة ومهنية قيادية عالية.
+                        تسجيل وتوثيق مئات الفرص والأنشطة لعمل الطلبة الميداني بمجموع تخطى 1,000 ساعة تطوعية معتمدة عبر المنصة الوطنية للتطوع، لصقل وتطوير مهارات الطلاب الإكلينيكية والميدانية وتأهيلهم لسوق العمل.
                       </p>
                     </div>
 
@@ -1199,13 +1223,13 @@ export default function App() {
                       className="bg-[#f8fafc]/50 hover:bg-white p-6 rounded-2xl border border-slate-200/60 hover:border-brand-teal/40 transition-all duration-300 hover:shadow-lg shadow-sm space-y-4 group"
                     >
                       <div className="w-12 h-12 bg-indigo-500/10 rounded-xl flex items-center justify-center text-indigo-600 group-hover:scale-105 transition-transform">
-                        <Sparkles className="w-6 h-6" />
+                        <MapPin className="w-6 h-6" />
                       </div>
                       <h3 className="font-sans font-black text-lg text-brand-academic">
-                        نجاح السكري الوقائي بالرياض بارك
+                        تنظيم فعاليات بمواقع جماهيرية كبرى
                       </h3>
-                      <p className="text-xs md:text-sm text-slate-500 font-sans leading-relaxed font-medium">
-                        إجراء تحدي الكيلومتر وبدائل السكر في مجمع الرياض بارك، وقياس معدل السكر التراكمي لغير المفحوصين، ما ساهم في الكشف المبكر والتحذير لـ ١٢٪ من الزوار وإحالتهم لجهات الرعاية الطبية المختصة لإدارة نمط المعيشة.
+                      <p className="text-xs md:text-sm text-slate-550 font-sans leading-relaxed font-medium">
+                        التواجد الميداني الفعّال وتنظيم حملات توعوية تفاعلية بمواصفات إبداعية في وجهات ومواقع كبرى متميزة مثل حي السمحانية التاريخي، وواجهة روشن، وساحة القيصرية؛ لرفع الوعي الصحي الغذائي والوقائي لأعلى شريحة مجتمعية.
                       </p>
                     </div>
                   </div>
@@ -1225,7 +1249,7 @@ export default function App() {
                     <h2 className="font-sans font-black text-2xl md:text-4xl text-brand-academic">
                       {t.leadershipTitle}
                     </h2>
-                    <p className="text-xs md:text-sm text-slate-550">
+                    <p className="text-xs md:text-sm text-slate-550 font-medium leading-relaxed">
                       {t.leadershipSub}
                     </p>
                   </div>
@@ -1249,7 +1273,7 @@ export default function App() {
                       <h2 className="font-sans font-black text-2xl md:text-4xl text-brand-academic">
                         {t.joinTitle}
                       </h2>
-                      <p className="text-xs md:text-sm text-slate-500">
+                      <p className="text-xs md:text-sm text-slate-500 font-medium leading-relaxed">
                         {t.joinSub}
                       </p>
                     </div>
@@ -1285,7 +1309,7 @@ export default function App() {
             <div className="md:col-span-5 space-y-5">
               <Logo showText lang="ar" size={48} light />
               <p className="text-xs md:text-[13px] leading-relaxed text-slate-400 font-sans">
-                الموقع التعريفي التفاعلي الرسمي لنادي صحة المجتمع بكلية العلوم الطبية التطبيقية بجامعة الملك سعود. نسعى لتمكين المجتمع صحياً وتثقيفياً ونشر العادات الوقائية والوقاية الاستباقية بكوادر طلابية مؤهلة وشغوفة.
+                البوابة التعريفية والتفاعلية الرسمية لنادي صحة المجتمع بكلية العلوم الطبية التطبيقية في جامعة الملك سعود. منبرٌ طموح يقوده شغف الكوادر الطلابية الواعدة لترسيخ الوعي وتأصيل الثقافة الصحية العامة وبناء مجتمعٍ حيوي يسوده السلوك الوقائي السليم والمستدام.
               </p>
             </div>
 
@@ -1303,7 +1327,7 @@ export default function App() {
                   >
                     <span className="w-1 h-1 rounded-full bg-slate-600 group-hover:bg-brand-teal transition-colors shrink-0" />
                     <span className="group-hover:translate-x-[-4px] transition-transform">
-                      {t.navHome}
+                      الرئيسية
                     </span>
                   </button>
                 </li>
@@ -1314,7 +1338,18 @@ export default function App() {
                   >
                     <span className="w-1 h-1 rounded-full bg-slate-600 group-hover:bg-brand-teal transition-colors shrink-0" />
                     <span className="group-hover:translate-x-[-4px] transition-transform">
-                      {t.navAbout}
+                      من نحن
+                    </span>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => scrollToSection("section-leadership")}
+                    className="hover:text-brand-teal transition-all duration-300 flex items-center gap-2 group text-right w-full cursor-pointer"
+                  >
+                    <span className="w-1 h-1 rounded-full bg-slate-600 group-hover:bg-brand-teal transition-colors shrink-0" />
+                    <span className="group-hover:translate-x-[-4px] transition-transform">
+                      الهيكلة
                     </span>
                   </button>
                 </li>
@@ -1336,7 +1371,18 @@ export default function App() {
                   >
                     <span className="w-1 h-1 rounded-full bg-slate-600 group-hover:bg-brand-teal transition-colors shrink-0" />
                     <span className="group-hover:translate-x-[-4px] transition-transform">
-                      {t.navEvents}
+                      الفعاليات
+                    </span>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => scrollToSection("section-achievements")}
+                    className="hover:text-brand-teal transition-all duration-300 flex items-center gap-2 group text-right w-full cursor-pointer"
+                  >
+                    <span className="w-1 h-1 rounded-full bg-slate-600 group-hover:bg-brand-teal transition-colors shrink-0" />
+                    <span className="group-hover:translate-x-[-4px] transition-transform">
+                      الإنجازات
                     </span>
                   </button>
                 </li>
@@ -1358,29 +1404,7 @@ export default function App() {
                   >
                     <span className="w-1 h-1 rounded-full bg-slate-600 group-hover:bg-brand-teal transition-colors shrink-0" />
                     <span className="group-hover:translate-x-[-4px] transition-transform">
-                      حاسبة الكتلة (BMI)
-                    </span>
-                  </button>
-                </li>
-                <li>
-                  <button
-                    onClick={() => scrollToSection("section-achievements")}
-                    className="hover:text-brand-teal transition-all duration-300 flex items-center gap-2 group text-right w-full cursor-pointer"
-                  >
-                    <span className="w-1 h-1 rounded-full bg-slate-600 group-hover:bg-brand-teal transition-colors shrink-0" />
-                    <span className="group-hover:translate-x-[-4px] transition-transform">
-                      الإنجازات
-                    </span>
-                  </button>
-                </li>
-                <li>
-                  <button
-                    onClick={() => scrollToSection("section-leadership")}
-                    className="hover:text-brand-teal transition-all duration-300 flex items-center gap-2 group text-right w-full cursor-pointer"
-                  >
-                    <span className="w-1 h-1 rounded-full bg-slate-600 group-hover:bg-brand-teal transition-colors shrink-0" />
-                    <span className="group-hover:translate-x-[-4px] transition-transform">
-                      {t.navLeadership}
+                      BMI (حاسبة الكتلة)
                     </span>
                   </button>
                 </li>
@@ -1391,7 +1415,7 @@ export default function App() {
                   >
                     <span className="w-1 h-1 rounded-full bg-brand-teal shrink-0" />
                     <span className="group-hover:translate-x-[-4px] transition-transform decoration-brand-teal">
-                      {t.navJoin}
+                      انضم إلينا
                     </span>
                   </button>
                 </li>
