@@ -69,40 +69,34 @@ const TikTokIcon = ({ className = "w-4.5 h-4.5" }: { className?: string }) => (
 
 const partnersList = [
   {
-    name: "شعار",
-    subName: "مساحة مخصصة لشعار شريك النجاح ١",
+    name: "هيئة الهلال الأحمر السعودي",
     bg: "bg-slate-50 border-slate-200",
-    logoUrl: ""
+    logoUrl: "/src/assets/srca.png"
   },
   {
-    name: "شعار",
-    subName: "مساحة مخصصة لشعار شريك النجاح ٢",
+    name: "المركز السعودي لزراعة الأعضاء",
     bg: "bg-slate-50 border-slate-200",
-    logoUrl: ""
+    logoUrl: "/src/assets/scot.png"
   },
   {
-    name: "شعار",
-    subName: "مساحة مخصصة لشعار شريك النجاح ٣",
+    name: "وزارة التعليم",
     bg: "bg-slate-50 border-slate-200",
-    logoUrl: ""
+    logoUrl: "/src/assets/moe.png"
   },
   {
-    name: "شعار",
-    subName: "مساحة مخصصة لشعار شريك النجاح ٤",
+    name: "الهيئة العامة للعقار",
     bg: "bg-slate-50 border-slate-200",
-    logoUrl: ""
+    logoUrl: "/src/assets/rega.png"
   },
   {
-    name: "شعار",
-    subName: "مساحة مخصصة لشعار شريك النجاح ٥",
+    name: "هيئة تطوير بوابة الدرعية",
     bg: "bg-slate-50 border-slate-200",
-    logoUrl: ""
+    logoUrl: "/src/assets/diriyah.png"
   },
   {
-    name: "شعار",
-    subName: "مساحة مخصصة لشعار شريك النجاح ٦",
+    name: "مركز الملك سلمان الأجتماعي",
     bg: "bg-slate-50 border-slate-200",
-    logoUrl: ""
+    logoUrl: "https://jsc.org.sa/wp-content/uploads/2024/09/JSC_LOGO-copy.png"
   }
 ];
 
