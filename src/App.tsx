@@ -71,33 +71,32 @@ const partnersList = [
   {
     name: "هيئة الهلال الأحمر السعودي",
     bg: "bg-slate-50 border-slate-200",
-    logoUrl: "/src/assets/srca.png"
+    logoUrl: new URL('./assets/assets/srca.png', import.meta.url).href
   },
   {
     name: "المركز السعودي لزراعة الأعضاء",
     bg: "bg-slate-50 border-slate-200",
-    logoUrl: "/src/assets/scot.png"
+    logoUrl: new URL('./assets/assets/scot.png', import.meta.url).href
   },
   {
     name: "وزارة التعليم",
     bg: "bg-slate-50 border-slate-200",
-    logoUrl: "/src/assets/moe.png"
+    logoUrl: new URL('./assets/assets/moe.png', import.meta.url).href
   },
   {
     name: "الهيئة العامة للعقار",
     bg: "bg-slate-50 border-slate-200",
-    logoUrl: "/src/assets/rega.png"
+    logoUrl: new URL('./assets/assets/rega.png', import.meta.url).href
   },
   {
     name: "هيئة تطوير بوابة الدرعية",
     bg: "bg-slate-50 border-slate-200",
-    logoUrl: "/src/assets/diriyah.png"
+    logoUrl: new URL('./assets/assets/diriyah.png', import.meta.url).href
   },
   {
-    name: "مركز الملك سلمان الأجتماعي",
+    name: "مركز الملك سلمان الاجتماعي",
     bg: "bg-slate-50 border-slate-200",
     logoUrl: "https://jsc.org.sa/wp-content/uploads/2024/09/JSC_LOGO-copy.png"
-  }
 ];
 
 function PartnerLogo({ partner }: { partner: typeof partnersList[number] }) {
