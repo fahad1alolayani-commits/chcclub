@@ -130,7 +130,7 @@ export default function OrgStructure() {
       icon: ShieldCheck,
       themeColor: "border-teal-200 text-teal-600 bg-teal-50/50",
       leader: {
-        name: "ندى الرميحي",
+        name: "ندى الرميثي",
         role: "رئيسة لجنة التقارير والجودة",
         department: "الجودة والامتياز",
         avatarLetter: "ن"
