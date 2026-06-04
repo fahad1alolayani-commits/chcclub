@@ -94,7 +94,7 @@ const partnersList = [
     logoUrl: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M30 20 H70 V35 H30 Z M40 35 H60 V80 H40 Z' fill='%23b45309'/><circle cx='50' cy='27' r='3' fill='white'/></svg>"
   },
   {
-    name: "مركز الملك سلمان الاجتماعي",
+    name: "مركز الملك سلمان الأجتماعي",
     bg: "bg-slate-50 border-slate-200",
     logoUrl: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'><circle cx='75' cy='35' r='18' fill='%23f1c40f'/><path d='M75 60 C45 60 35 85 45 105 C55 110 85 110 105 102 C115 85 105 60 75 60 Z' fill='none' stroke='%232980b9' stroke-width='10' stroke-linecap='round'/><path d='M75 68 C55 68 48 85 55 100' fill='none' stroke='%231f3a60' stroke-width='8' stroke-linecap='round'/></svg>"
   }
