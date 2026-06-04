@@ -71,34 +71,34 @@ const partnersList = [
   {
     name: "هيئة الهلال الأحمر السعودي",
     bg: "bg-slate-50 border-slate-200",
-    logoUrl: new URL('./assets/assets/srca.png', import.meta.url).href
+    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/e/e3/Saudi_Red_Crescent_Authority_Logo.svg"
   },
   {
     name: "المركز السعودي لزراعة الأعضاء",
     bg: "bg-slate-50 border-slate-200",
-    logoUrl: new URL('./assets/assets/scot.png', import.meta.url).href
+    logoUrl: "https://scot.gov.sa/assets/images/logo.png"
   },
   {
     name: "وزارة التعليم",
     bg: "bg-slate-50 border-slate-200",
-    logoUrl: new URL('./assets/assets/moe.png', import.meta.url).href
+    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Ministry_of_Education_%28Saudi_Arabia%29_Logo.svg/1200px-Ministry_of_Education_%28Saudi_Arabia%29_Logo.svg.png"
   },
   {
     name: "الهيئة العامة للعقار",
     bg: "bg-slate-50 border-slate-200",
-    logoUrl: new URL('./assets/assets/rega.png', import.meta.url).href
+    logoUrl: "https://rega.gov.sa/assets/images/logo.png"
   },
   {
     name: "هيئة تطوير بوابة الدرعية",
     bg: "bg-slate-50 border-slate-200",
-    logoUrl: new URL('./assets/assets/diriyah.png', import.meta.url).href
+    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/c/c8/Diriyah_Gate_Development_Authority_Logo.png"
   },
   {
     name: "مركز الملك سلمان الاجتماعي",
     bg: "bg-slate-50 border-slate-200",
     logoUrl: "https://jsc.org.sa/wp-content/uploads/2024/09/JSC_LOGO-copy.png"
+  }
 ];
-
 function PartnerLogo({ partner }: { partner: typeof partnersList[number] }) {
   const [hasError, setHasError] = useState(false);
 
