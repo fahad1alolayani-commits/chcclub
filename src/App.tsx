@@ -97,6 +97,7 @@ const partnersList = [
     name: "مركز الملك سلمان الاجتماعي",
     bg: "bg-slate-50 border-slate-200",
     logoUrl: "https://jsc.org.sa/wp-content/uploads/2024/09/JSC_LOGO-copy.png"
+  }
 ];
 
 function PartnerLogo({ partner }: { partner: typeof partnersList[number] }) {
