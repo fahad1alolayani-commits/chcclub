@@ -97,6 +97,12 @@ const partnersList = [
     subName: "الهيئة العامة للعقار",
     bg: "bg-white border-slate-100",
     logoUrl: "https://upload.wikimedia.org/wikipedia/ar/thumb/3/3f/شعارالهيئة_العامة_للعقار_%28السعودية%29.svg/3840px-شعارالهيئة_العامة_للعقار_%28السعودية%29.svg.png"
+  },
+  {
+    name: "مدينة الدرعية الصحية",
+    subName: "مدينة الدرعية الصحية",
+    bg: "bg-white border-slate-100",
+    logoUrl: "https://i.postimg.cc/3xx2GqmJ/PHOTO-2026-06-05-15-38-13.jpg"
   }
 ];
 
