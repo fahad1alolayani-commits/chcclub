@@ -285,9 +285,9 @@ export const eventsData: ClubEvent[] = [
       en: "School & Nutrition Awareness"
     },
     metrics: [
-      { label: { ar: "طلاب المدارس المستفيدين", en: "School Students Engaged" }, value: "1,200+" },
-      { label: { ar: "موجهين صحيين تم تدريبهم", en: "Health Counselors Trained" }, value: "45" },
-      { label: { ar: "أدلة تغذية تفاعلية موزعة", en: "Educational Packs Distributed" }, value: "850+" }
+      { label: { ar: "طلاب المدارس المستفيدين", en: "School Students Engaged" }, value: "280+" },
+      { label: { ar: "موجهين صحيين تم تدريبهم", en: "Health Counselors Trained" }, value: "12" },
+      { label: { ar: "أدلة تغذية تفاعلية موزعة", en: "Educational Packs Distributed" }, value: "150+" }
     ]
   },
   {
@@ -328,9 +328,9 @@ export const eventsData: ClubEvent[] = [
       en: "Workplace Wellness & Health Day"
     },
     metrics: [
-      { label: { ar: "موظفون خضعوا للفحص السريع", en: "Employees Screened" }, value: "680+" },
-      { label: { ar: "استشارات طبية فورية", en: "On-site Medical Consults" }, value: "240+" },
-      { label: { ar: "منشورات وقائية تم تحميلها", en: "Digital Pamphlets Loaded" }, value: "1,150+" }
+      { label: { ar: "موظفون خضعوا للفحص السريع", en: "Employees Screened" }, value: "120+" },
+      { label: { ar: "استشارات طبية فورية", en: "On-site Medical Consults" }, value: "45+" },
+      { label: { ar: "منشورات وقائية تم تحميلها", en: "Digital Pamphlets Loaded" }, value: "180+" }
     ]
   },
   {
@@ -371,9 +371,9 @@ export const eventsData: ClubEvent[] = [
       en: "Kidney Health & Hydration"
     },
     metrics: [
-      { label: { ar: "حساب نسبة الارتواء الرقمي", en: "Hydration Calculators Configured" }, value: "950+" },
-      { label: { ar: "توزيع زجاجات المبادرة التذكيرية", en: "Hydration Bottles Given" }, value: "1,500+" },
-      { label: { ar: "تعهدات وقائية (الحد من المسكنات)", en: "Analgesic Reduction Pledges" }, value: "480+" }
+      { label: { ar: "حساب نسبة الارتواء الرقمي", en: "Hydration Calculators Configured" }, value: "110+" },
+      { label: { ar: "توزيع زجاجات المبادرة التذكيرية", en: "Hydration Bottles Given" }, value: "150+" },
+      { label: { ar: "تعهدات وقائية (الحد من المسكنات)", en: "Analgesic Reduction Pledges" }, value: "65+" }
     ]
   },
   {
@@ -414,8 +414,8 @@ export const eventsData: ClubEvent[] = [
       en: "Obesity Defense & Fitness"
     },
     metrics: [
-      { label: { ar: "زوار الفعالية بساحة القيصرية", en: "Campaign Active Visitors" }, value: "3,200+" },
-      { label: { ar: "فحوص كتل وبنية الجسم التامة", en: "Complete InBody Diagnostics" }, value: "1,450+" },
+      { label: { ar: "زوار الفعالية بساحة القيصرية", en: "Campaign Active Visitors" }, value: "350+" },
+      { label: { ar: "فحوص كتل وبنية الجسم التامة", en: "Complete InBody Diagnostics" }, value: "120+" },
       { label: { ar: "أندية الكلية المشاركة بالكامل", en: "Participating College Clubs" }, value: "7 أندية" }
     ]
   },
@@ -457,9 +457,9 @@ export const eventsData: ClubEvent[] = [
       en: "Chronic Disease & Sustainable Habits"
     },
     metrics: [
-      { label: { ar: "مستفيدين تم فحصهم وتثقيفهم", en: "Diriyah Residents Screened" }, value: "1,800+" },
+      { label: { ar: "مستفيدين تم فحصهم وتثقيفهم", en: "Diriyah Residents Screened" }, value: "240+" },
       { label: { ar: "اكتشاف مبكر لمؤشرات ما قبل السكري", en: "Early Pre-Diabetes Flags" }, value: "14%" },
-      { label: { ar: "حضور الندوة المفتوحة بالسمحانية", en: "Symposium Seat Attendants" }, value: "350+" }
+      { label: { ar: "حضور الندوة المفتوحة بالسمحانية", en: "Symposium Seat Attendants" }, value: "85+" }
     ]
   },
   {
@@ -500,9 +500,9 @@ export const eventsData: ClubEvent[] = [
       en: "Oncology Awareness & Early Diagnoses"
     },
     metrics: [
-      { label: { ar: "حضور لافت بمركز الملك سلمان", en: "Center Visitors & Attendees" }, value: "1,100+" },
-      { label: { ar: "استشارات توجيهية لعيادات الكلية", en: "On-site Clinic Referrals" }, value: "190+" },
-      { label: { ar: "مطويات 'الحقيقة والدواء' الموزعة", en: "Myth-Buster Booklets Out" }, value: "2,000+" }
+      { label: { ar: "حضور لافت بمركز الملك سلمان", en: "Center Visitors & Attendees" }, value: "180+" },
+      { label: { ar: "استشارات توجيهية لعيادات الكلية", en: "On-site Clinic Referrals" }, value: "40+" },
+      { label: { ar: "مطويات 'الحقيقة والدواء' الموزعة", en: "Myth-Buster Booklets Out" }, value: "250+" }
     ]
   }
 ];

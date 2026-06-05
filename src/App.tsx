@@ -218,6 +218,19 @@ export default function App() {
   const [quizAnswers, setQuizAnswers] = useState<Record<number, string>>({});
   const [showQuizFeedback, setShowQuizFeedback] = useState<Record<number, boolean>>({});
   const [currentSlide, setCurrentSlide] = useState(0);
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const checkMobile = () => {
+        setIsMobile(window.innerWidth < 768);
+      };
+      checkMobile();
+      window.addEventListener("resize", checkMobile);
+      return () => window.removeEventListener("resize", checkMobile);
+    }
+  }, []);
   const [showAdmin, setShowAdmin] = useState(false);
 
   const [slides, setSlides] = useState(() => {
@@ -351,7 +364,7 @@ export default function App() {
     setActiveSection(id);
     setMobileMenuOpen(false);
     if (typeof window !== "undefined") {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      window.scrollTo({ top: 0, behavior: isMobile ? "auto" : "smooth" });
     }
   };
 
@@ -490,10 +503,10 @@ export default function App() {
         <AnimatePresence mode="wait">
           <motion.div
             key={activeSection}
-            initial={{ opacity: 0, y: 15 }}
+            initial={{ opacity: 0, y: isMobile ? 0 : 8 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -15 }}
-            transition={{ duration: 0.25, ease: "easeInOut" }}
+            exit={{ opacity: 0, y: isMobile ? 0 : -8 }}
+            transition={{ duration: isMobile ? 0.12 : 0.22, ease: "easeInOut" }}
           >
             {activeSection === "section-home" && (
               <>
@@ -597,7 +610,7 @@ export default function App() {
                           <Users className="w-5 h-5" />
                         </div>
                         <p className="font-mono text-3xl md:text-4xl font-extrabold text-[#56A8A7] tracking-tight">
-                          4,000+
+                          1,500+
                         </p>
                         <p className="text-xs md:text-sm font-semibold opacity-90 text-slate-300 font-sans">
                           {t.statsBeneficiaries}
@@ -613,7 +626,7 @@ export default function App() {
                           <Activity className="w-5 h-5" />
                         </div>
                         <p className="font-mono text-3xl md:text-4xl font-extrabold text-[#56A8A7] tracking-tight">
-                          20+
+                          8+
                         </p>
                         <p className="text-xs md:text-sm font-semibold opacity-90 text-slate-300 font-sans">
                           {t.statsCampaigns}
@@ -629,7 +642,7 @@ export default function App() {
                           <Award className="w-5 h-5" />
                         </div>
                         <p className="font-mono text-3xl md:text-4xl font-extrabold text-[#56A8A7] tracking-tight">
-                          120+
+                          45+
                         </p>
                         <p className="text-xs md:text-sm font-semibold opacity-90 text-slate-300 font-sans">
                           {t.statsMembers}
@@ -645,7 +658,7 @@ export default function App() {
                           <Clock className="w-5 h-5" />
                         </div>
                         <p className="font-mono text-3xl md:text-4xl font-extrabold text-[#56A8A7] tracking-tight">
-                          1,000+
+                          350+
                         </p>
                         <p className="text-xs md:text-sm font-semibold opacity-90 text-slate-300 font-sans">
                           {t.statsHours}

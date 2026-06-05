@@ -207,6 +207,19 @@ export default function SpecializationsSection() {
   const [activeMajor, setActiveMajor] = useState<string>("clinical_nutrition");
   const [selectedYearIndex, setSelectedYearIndex] = useState<number>(0);
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  React.useEffect(() => {
+    if (typeof window !== "undefined") {
+      const checkMobile = () => {
+        setIsMobile(window.innerWidth < 768);
+      };
+      checkMobile();
+      window.addEventListener("resize", checkMobile);
+      return () => window.removeEventListener("resize", checkMobile);
+    }
+  }, []);
+
   const major = specializationsData.find((m) => m.id === activeMajor) || specializationsData[0];
   const selectedYear = major.years[selectedYearIndex];
 
@@ -407,10 +420,10 @@ export default function SpecializationsSection() {
         <AnimatePresence mode="wait">
           <motion.div
             key={`${activeMajor}-${selectedYearIndex}`}
-            initial={{ opacity: 0, y: 10 }}
+            initial={{ opacity: 0, y: isMobile ? 0 : 8 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            transition={{ duration: 0.25 }}
+            exit={{ opacity: 0, y: isMobile ? 0 : -8 }}
+            transition={{ duration: isMobile ? 0.12 : 0.22, ease: "easeInOut" }}
             id="year-details-interactive-panel"
             className="bg-white rounded-3xl border border-slate-200/60 p-6 md:p-10 shadow-lg shadow-slate-100/50 relative overflow-hidden"
           >

@@ -55,9 +55,33 @@ interface Issue {
     text: string;
     author: string;
   };
+  directLink?: string;
 }
 
 const magazineIssues: Issue[] = [
+  {
+    number: 14,
+    title: "التثقيف الدوائي وسلامة المجتمع",
+    date: "يونيو 2026",
+    theme: "الدليل الإرشادي الشامل للحد من التداخلات الدوائية ودور الوعي التوعوي بسلامة الأسرة",
+    color: "from-teal-850 to-indigo-900",
+    description: "الإصدار الأحدث يستقصي مخاطر التعارضات العلاجية ومبادئ الاستخدام الرشيد للأدوية والمضادات، مع إجابات واستشارات تثقيفية شاملة لسلامة الفرد والمجتمع.",
+    directLink: "https://drive.google.com/file/d/13seCaDhy82SLQ3mhXgdtTwlpgsVbySQi/view?usp=share_link",
+    articles: [
+      {
+        title: "التثقيف الدوائي السليم: حماية مبرهنة من مخاطر التعارضات والتداخلات العلاجية",
+        author: "إعداد شعبة التوعية والصيدلة بالكلية",
+        category: "الوعي الدوائي وظائف البدن",
+        readTime: "4 دقائق",
+        summary: "الاستعمال المتوازن والرشيد لكافة المركبات الطبية وحماية الكلى والكبد من أخطار الجرعات العشوائية.",
+        content: "يسلط هذا المقال الضوء على أهمية استشارة الطبيب والصيدلاني لضبط جدول تناول الأدوية وتلافي الأغذية التي تحد من امتصاص المادة الفعالة، تحقيقاً للغايات العلاجية القصوى بأمان واستقرار تام."
+      }
+    ],
+    featuredQuote: {
+      text: "الوعي باستخدام الدواء والالتزام بالوصفة الطبية الآمنة يمثلان خط الدفاع الأول لحفظ مرونة وكفاءة البدن.",
+      author: "إشراف اللجنة العلمية لنادي صحة المجتمع"
+    }
+  },
   {
     number: 13,
     title: "طيف التوحد - المكتسبات التنموية والسلوكية",
@@ -65,6 +89,7 @@ const magazineIssues: Issue[] = [
     theme: "قصة الغلاف تستقصي اضطراب طيف التوحد وأنواعه ودليله الشامل للمكتسبات المعرفية والسلوكية",
     color: "from-indigo-900 to-indigo-700",
     description: "الإصدار الأحدث يتناول طيف التوحد من منظور علمي ونفسي واجمالي، ويوضح طرق الدعم والعلاج وتنمية مهارات النطق واللغة والتحكم السلوكي المناسب.",
+    directLink: "https://drive.google.com/file/d/111XlObvr6Rvas_V1geOkMt4m5xSzry-V/view?usp=share_link",
     articles: [
       {
         title: "أبطال في الظل: حين تكون الأم هي السند والكيان المنيع للطفل",
@@ -103,6 +128,7 @@ const magazineIssues: Issue[] = [
     theme: "الدليل الشامل للوظائف الكلوية وعلم السوائل والتغذية السريرية المصاحبة للحفاظ على البدن",
     color: "from-sky-800 to-sky-600",
     description: "يستقصي هذا العدد البنية المتكاملة للكليتين، عوامل الخطر المباشرة، وكيفية حماية خلايا البدن بتوازن السوائل الحيوية والأدوية الآمنة.",
+    directLink: "https://drive.google.com/file/d/10zP8H2sWCyFSLSV4B1v-NOmOQ5rpmRxQ/view?usp=share_link",
     articles: [
       {
         title: "وظائف الكلى في جسم الإنسان ودورها في موازنة الحموضة ومستويات ضغط الدم الشرياني",
@@ -135,12 +161,36 @@ const magazineIssues: Issue[] = [
     }
   },
   {
+    number: 11,
+    title: "صحة المجتمع والوعي الوقائي",
+    date: "ديسمبر 2025",
+    theme: "أهداف نادي صحة المجتمع وطموحاته ونموذجه التوعوي الرائد في تعزيز رعاية وصحة البدن",
+    color: "from-purple-800 to-indigo-950",
+    description: "يستعرض هذا العدد مفاهيم الرعاية والوقاية وبناء الوعي الصحي السليم ضد الأمراض الحيوية والممارسات اليومية الإرشادية.",
+    directLink: "https://drive.google.com/file/d/1mg4KXJLhNG9Jm10cE2T3NM7EPb_5-k4u/view?usp=share_link",
+    articles: [
+      {
+        title: "الرؤية والرسالة لنادي صحة المجتمع بجامعة الملك سعود وأبعادها التوعوية",
+        author: "إعداد فريق العلاقات والتثقيف",
+        category: "التثقيف والريادة",
+        readTime: "4 دقائق",
+        summary: "تأطير عازم وأكاديمي لنشر السلوكيات الحميدة وحفظ البدن وبذل العطاء المعرفي والوعي الوقائي.",
+        content: "نسعى جاهدين في نادي صحة المجتمع بكلية العلوم الطبية التطبيقية إلى إمداد المجتمع الجامعي والمحلي بأقوى الحقائق الطبية المدعمة بالأبحاث، لنكون الجسر الواصل بين صميم العلم بسلامة البدن والمستفيدين المباشرين لتقليص الأوبئة والارتقاء بجودة الحياة."
+      }
+    ],
+    featuredQuote: {
+      text: "التوعية هي الركيزة الأولى لبناء غدٍ معافى وصحي وخالٍ من الأخطار والاعتلالات.",
+      author: "إدارة التثقيف بالنادي"
+    }
+  },
+  {
     number: 10,
     title: "صحة الرجل والالتهاب الرئوي",
     date: "نوفمبر 2025",
     theme: "محددات صحة الرجل الحيوية ومواجهة الأمراض التنفسية الحادة والمزمنة وسبل الوقاية التحصينية",
     color: "from-neutral-700 to-neutral-900",
     description: "يستقصي هذا العدد مفهوم صحة الرجل ومتلازمات القلق وإجهاد العمل، مع دراسة وبائية كاملة لالتهابات الرئة وعزل الميكروبات.",
+    directLink: "https://drive.google.com/file/d/18fkHIWMPU8RenhLMDotjGzP8vOYfth5n/view?usp=share_link",
     articles: [
       {
         title: "مفهوم صحة الرجل الشامل ومواجهة تصلب الشرايين والضغوط المهنية المزمنة",
@@ -171,6 +221,7 @@ const magazineIssues: Issue[] = [
     theme: "التثقيف ضد نزلات البرد وعزل الفيروسات وبناء آليات المناعة",
     color: "from-teal-700 to-sky-900",
     description: "دليل غني وتفاعلي للفرق والتشخيص السريع لنزلات البرد والإنفلونزا، بمشاركة أكاديمية متميزة لعزل الفيروسات وبناء آليات المناعة والتغذية.",
+    directLink: "https://drive.google.com/file/d/1sbfcNj12bdy9a7zK21StBtnXe_P8fJpx/view?usp=share_link",
     articles: [
       {
         title: "الفرق بين الإنفلونزا ونزلات البرد من حيث السبب والأعراض وعزم الانتقال والتنظيف",
@@ -209,6 +260,7 @@ const magazineIssues: Issue[] = [
     theme: "الملف المتكامل للطلاب والتحصيل الدراسي والتركيز وتوفير وجبة إفطار صحية ومكافحة الجفاف المدرسي",
     color: "from-blue-700 to-blue-900",
     description: "مجلة نادي صحة المجتمع تضع بين يدي الطلاب دليلاً صحياً شاملاً يحمي عافيتهم ويزيد استيعابهم بوجبات إفطار هادئة وترطيب مائي متكامل وساعات نوم وعزم الحركة.",
+    directLink: "https://drive.google.com/file/d/1AXjjDmDkZpZQQvy7ry36CSG4NatlLplO/view?usp=share_link",
     articles: [
       {
         title: "التغذية الصحية للطلاب: هندسة الإفطار التلقائي لفرز الطاقة والتركيز",
@@ -241,12 +293,36 @@ const magazineIssues: Issue[] = [
     }
   },
   {
+    number: 7,
+    title: "الرعاية التكاملية وجودة الحياة",
+    date: "يونيو 2025",
+    theme: "التثقيف والتأهيل الحركي والتغذوي كأعمدة أساسية لبناء لياقة جسدية عالية وحماية المفاصل",
+    color: "from-sky-700 to-teal-950",
+    description: "إصدار يستثير مهارات الحفاظ على كفاءة البدن من خلال النشاط الحركي والبدني السليم والتحذير من الخمول المزمن.",
+    directLink: "https://drive.google.com/file/d/1HqKz9p3xf_RROBDUwIIC3ywLRqZR9AX8/view?usp=share_link",
+    articles: [
+      {
+        title: "كفاءة العضلات والمفاصل وأهمية الحركة والتحميل البدني التدريجي",
+        author: "إعداد أخصائيي العلاج الطبيعي والتأهيل",
+        category: "الحياة الحركية والبدنية",
+        readTime: "4 دقائق",
+        summary: "تأثير الخمول على صحة العظام والأجهزة التنفسية وأثر الرياضة الفاعل في رفع نبض الخلايا ومستوى الحيوية.",
+        content: "الحفاظ على حركية البدن يعتبر الركن الجوهري لصحة كبار السن والشباب معاً، حيث تسهم الأنشطة التمارينية في مرونة المفاصل وصمود الخلايا وتحفيز عزم التنفس."
+      }
+    ],
+    featuredQuote: {
+      text: "الوقاية والنشاط يصنعان درع الأمان لحماية مفاصل البدن.",
+      author: "أخصائي التأهيل الحركي بجامعة الملك سعود"
+    }
+  },
+  {
     number: 6,
     title: "صحة متزنة",
     date: "أبريل 2025",
     theme: "التوازن الشامل بين الجوانب الجسدية والنفسية والمهنية وتخطيط برامج التثقيف بالدراسات المعملية والسريرية",
     color: "from-teal-800 to-brand-blue",
     description: "إصدار يستقرئ أهم المعالم الصحية المعاصرة والنشاط البدني وأثر التطوع على الصحة النفسية، وبحوث معالجة القلق والإجهاد بالفحوصات.",
+    directLink: "https://drive.google.com/file/d/1GGpXAckTdwA9ICqBHxW_71guRRGGHGz4/view?usp=share_link",
     articles: [
       {
         title: "الصحة الجسدية: مفتاح الجودة والتوازن الحيوي لمقاومة أمراض العصر",
@@ -285,6 +361,7 @@ const magazineIssues: Issue[] = [
     theme: "الدليل الشامل للتحكم بالجهاز الهضمي، الصداع، العطش، والتغذية السليمة المتوازنة لإرساء صيام مبرهن",
     color: "from-amber-700 to-amber-900",
     description: "إصدار يستعرض كيفية حماية البدن من الصداع والكسل الهضمي وعطش البدن في نهار الصيام بمشاركات غذائية وسريرية هادفة.",
+    directLink: "https://drive.google.com/file/d/1xAeQCh3UrhA7VByXZh58fRJpZ45ndiPv/view?usp=share_link",
     articles: [
       {
         title: "اضطرابات الهضم الشائعة في رمضان: الأسباب والتوجيهات الطبية والوقائية",
@@ -317,12 +394,36 @@ const magazineIssues: Issue[] = [
     }
   },
   {
+    number: 4,
+    title: "التضامن والصحة العامة",
+    date: "يناير 2025",
+    theme: "التوعية الطبية ونشر المعرفة الصحية الوقائية بالمدارس والمقاصف لتحفيز الطلبة",
+    color: "from-teal-850 to-emerald-950",
+    description: "إصدار يستكشف رعاية أفراد البدن وزيادة الثقافة الصحية ودعم الأسر بالاستشارات الطبية واللقاحات الأساسية.",
+    directLink: "https://drive.google.com/file/d/1qkSarqqcOPO7t-V-2pROFqtoi8UNIRyF/view?usp=share_link",
+    articles: [
+      {
+        title: "أهمية اللقاحات الوقائية السنوية والالتزام بمواعيد الجرعات الدورية للأطفال والكبار",
+        author: "إعداد رئيسية التوعية باللجنة",
+        category: "الصحة العامة",
+        readTime: "4 دقائق",
+        summary: "قراءة في اللقاحات وأثر المناعة الذاتية في الحد من الأوبئة المعدية والتعاون الأسري الفعال.",
+        content: "نسلط الضوء في هذا البحث على ريادة اللقاحات الوطنية ودورها في عزل السلالات المرضية وحماية البنية المجتمعية."
+      }
+    ],
+    featuredQuote: {
+      text: "الوقاية والالتزام بالجدول الوطني للقاحات هما الضامن لصحة أجيالنا.",
+      author: "أخصائي الصحة العامة"
+    }
+  },
+  {
     number: 3,
     title: "سكر الحياة وأنفاس الأمل",
     date: "نوفمبر 2024",
     theme: "الملف التفصيلي للسكري النوع الأول أثناء الحمل وتأثير النظام الأيضي وحملات سرطان الرئة الوبائي والأبحاث",
     color: "from-emerald-700 to-emerald-950",
     description: "إصدار النسخة الثالثة من مجلة التثقيف الصحي يستكشف السكري وتدرجه وسكري الحمل، مع كشف الارتباط بين تلوث الهواء وسرطان الرئة وأهمية التشخيص المبكر وجرعات الحليب وصحة العظام.",
+    directLink: "https://drive.google.com/file/d/1eC-h5WlzRP0ntHbL2kTCVPHrp4LbJmuE/view?usp=share_link",
     articles: [
       {
         title: "السكري النوع الأول كاعتراض مناعي وتأثير السلوك والوعي العائلي بالتكيف والتعايش السريري",
@@ -353,6 +454,7 @@ const magazineIssues: Issue[] = [
     theme: "حملات التوعية بسرطان الثدي، وهشاشة العظام السريرية والوقاية، واعتلالات الشبكية السكرية للإبصار والعيون",
     color: "from-rose-800 to-rose-950",
     description: "إصدار غني يلم بطفرات الجينات، وأورام الثدي وسجلات الصحة الإنجابية بجمعية زهرة، مع دراسة مبرهنة لهشاشة العظام وقياس دكسا وفسيولوجيا البصريات والماء الأبيض.",
+    directLink: "https://drive.google.com/file/d/17bayv-SbVCW-cwctTTk8cIM-3E2h8I-K/view?usp=share_link",
     articles: [
       {
         title: "سرطان الثدي: الأسباب الجينية الحيوية وفاعلية الماموغرام والكشف المبكر السريع",
@@ -390,6 +492,29 @@ const magazineIssues: Issue[] = [
     featuredQuote: {
       text: "التثقيف الصحي علم ريادي يربط الفهم الوبائي ونماذج الأبحاث بحياة المستفيد لتصميم وقاية مستدامة لكل بيت.",
       author: "مشاري بن عبدالمحسن المالكي (وتين للتبرع بالدم)"
+    }
+  },
+  {
+    number: 1,
+    title: "البداية والوعي التأسيسي",
+    date: "سبتمبر 2024",
+    theme: "العدد التأسيسي الأول لتدشين نادي صحة المجتمع ونشر المعرفة الصحية الأساسية",
+    color: "from-slate-800 to-indigo-950",
+    description: "باكورة أعمال نادي صحة المجتمع حيث وضع حجر الأساس للمجلة التثقيفية والصحية لجامعة الملك سعود.",
+    directLink: "https://drive.google.com/file/d/18cAR2KwRir-3UfGbsz38WQ32Yf_FJOXr/view?usp=share_link",
+    articles: [
+      {
+        title: "أهداف نادي صحة المجتمع ورسالته المستدامة لبناء وعي متطور",
+        author: "إعداد الهيئة التأسيسية للنادي",
+        category: "علوم التثقيف والتعزيز",
+        readTime: "5 دقائق",
+        summary: "كيف انطلق التعاون التوعوي بين شؤون الطلاب والكلية وصياغة مجلة مبرهنة تثقيفية علمية رصينة.",
+        content: "تمثل البداية انطلاقة متجددة لنشر العادات الصحية السليمة ومساعدة كافة شرائح الطلاب وأسرهم على تبني أسلوب حياة صحي وممتلئ بالحيوية."
+      }
+    ],
+    featuredQuote: {
+      text: "الخطوة الأولى هي الأهم، ورسالتنا هي غرس بذور العافية لكل فرد.",
+      author: "مشرف عام الأنشطة للكلية"
     }
   }
 ];
@@ -665,10 +790,23 @@ const openArticlePDF = (article: Article, issueNum: number, issueDate: string, i
 };
 
 export default function MagazineSection() {
-  const [selectedIssueNum, setSelectedIssueNum] = useState<number>(13);
+  const [selectedIssueNum, setSelectedIssueNum] = useState<number>(14);
   const [searchQuery, setSearchQuery] = useState("");
   const [activeArticle, setActiveArticle] = useState<Article | null>(null);
   const [copiedLink, setCopiedLink] = useState(false);
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  React.useEffect(() => {
+    if (typeof window !== "undefined") {
+      const checkMobile = () => {
+        setIsMobile(window.innerWidth < 768);
+      };
+      checkMobile();
+      window.addEventListener("resize", checkMobile);
+      return () => window.removeEventListener("resize", checkMobile);
+    }
+  }, []);
 
   // Filter issues or search articles across all issues
   const currentIssue = magazineIssues.find((issue) => issue.number === selectedIssueNum) || magazineIssues[0];
@@ -846,7 +984,7 @@ export default function MagazineSection() {
               <h4 className="font-sans font-bold text-xs text-[#1CAADA]">أرقام وحقائق عن المجلة:</h4>
               <div className="grid grid-cols-2 gap-3">
                 <div className="p-3 bg-white rounded-xl border border-slate-200/40 text-center">
-                  <p className="font-mono text-xl font-black text-brand-academic">11</p>
+                  <p className="font-mono text-xl font-black text-brand-academic">{magazineIssues.length}</p>
                   <p className="text-[10px] text-slate-450 font-bold">أعداد منشورة كاملة</p>
                 </div>
                 <div className="p-3 bg-white rounded-xl border border-slate-200/40 text-center">
@@ -871,7 +1009,7 @@ export default function MagazineSection() {
             <div className="bg-white rounded-2xl border border-slate-200/60 shadow-sm overflow-hidden text-right">
               
               {/* Issue Banner Header */}
-              <div className={`p-6 bg-gradient-to-br ${currentIssue.color} text-white space-y-3 relative overflow-hidden`}>
+              <div className={`p-6 bg-gradient-to-br ${currentIssue.color} text-white space-y-4 relative overflow-hidden`}>
                 <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/10 opacity-40 pointer-events-none" />
                 <div className="relative z-10 flex flex-wrap justify-between items-center gap-3">
                   <div className="space-y-1">
@@ -888,9 +1026,30 @@ export default function MagazineSection() {
                   </span>
                 </div>
 
-                <p className="text-xs md:text-sm text-slate-100/90 leading-relaxed max-w-3xl pt-2 relative z-10 font-sans">
+                <p className="text-xs md:text-sm text-slate-100/90 leading-relaxed max-w-3xl pt-1 relative z-10 font-sans">
                   {currentIssue.description}
                 </p>
+
+                {/* Direct Browse Link CTA */}
+                <div className="pt-2 relative z-10 flex flex-wrap gap-3">
+                  {currentIssue.directLink && currentIssue.directLink.trim() !== "" && currentIssue.directLink !== "https://x.com/1975_magazine" && currentIssue.directLink !== "#" ? (
+                    <a
+                      href={currentIssue.directLink}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="px-4 py-2 md:px-5 md:py-2.5 bg-[#2dd4bf] text-slate-900 hover:bg-[#1f9d8d] hover:text-white text-xs font-extrabold rounded-xl transition-all duration-300 flex items-center gap-1.5 shadow-md transform hover:scale-[1.03] active:scale-[0.97]"
+                    >
+                      <BookOpen className="w-3.5 h-3.5" />
+                      <span>تصفح العدد كاملاً 📖</span>
+                      <ExternalLink className="w-3 h-3" />
+                    </a>
+                  ) : (
+                    <div className="px-4 py-2 md:px-5 md:py-2.5 bg-white/10 text-white/80 text-xs font-bold rounded-xl border border-white/20 flex items-center gap-1.5 select-none font-sans">
+                      <BookOpen className="w-3.5 h-3.5 text-[#2dd4bf] animate-pulse" />
+                      <span>رابط تصفح هذا العدد مباشرةً قيد التحديث ⏳</span>
+                    </div>
+                  )}
+                </div>
               </div>
 
               {/* Browse Articles list */}
@@ -973,9 +1132,10 @@ export default function MagazineSection() {
             >
               <motion.div
                 id="magazine-lightbox-modal"
-                initial={{ scale: 0.95, y: 15 }}
+                initial={{ scale: isMobile ? 1 : 0.96, y: isMobile ? 0 : 10 }}
                 animate={{ scale: 1, y: 0 }}
-                exit={{ scale: 0.95, y: 15 }}
+                exit={{ scale: isMobile ? 1 : 0.96, y: isMobile ? 0 : 10 }}
+                transition={{ duration: isMobile ? 0.12 : 0.22, ease: "easeInOut" }}
                 className="bg-white rounded-2xl max-w-3xl w-full shadow-2xl border border-slate-200 overflow-hidden relative p-6 md:p-8 space-y-5 text-right flex flex-col justify-between max-h-[85vh]"
                 onClick={(e) => e.stopPropagation()}
               >
