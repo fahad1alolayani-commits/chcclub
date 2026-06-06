@@ -242,10 +242,10 @@ export default function BMICalculatorSection() {
                 <label className="text-xs font-bold text-slate-600 block text-right">العمر:</label>
                 <input
                   type="number"
-                  min="5"
+                  min="1"
                   max="99"
-                  value={age}
-                  onChange={(e) => setAge(Math.max(5, parseInt(e.target.value) || 20))}
+                  value={age || ''}
+                  onChange={(e) => setAge(e.target.value ? Number(e.target.value) : '')}
                   className="w-full text-center py-2 px-3 bg-slate-50 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-teal font-sans text-xs font-bold text-slate-800"
                 />
               </div>
