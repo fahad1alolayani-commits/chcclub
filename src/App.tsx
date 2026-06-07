@@ -616,7 +616,7 @@ export default function App() {
                           <Users className="w-5 h-5" />
                         </div>
                         <p className="font-mono text-3xl md:text-4xl font-extrabold text-[#56A8A7] tracking-tight">
-                          1,500+
+                          16,800+
                         </p>
                         <p className="text-xs md:text-sm font-semibold opacity-90 text-slate-300 font-sans">
                           {t.statsBeneficiaries}
@@ -632,7 +632,7 @@ export default function App() {
                           <Activity className="w-5 h-5" />
                         </div>
                         <p className="font-mono text-3xl md:text-4xl font-extrabold text-[#56A8A7] tracking-tight">
-                          8+
+                          27+
                         </p>
                         <p className="text-xs md:text-sm font-semibold opacity-90 text-slate-300 font-sans">
                           {t.statsCampaigns}
@@ -648,7 +648,7 @@ export default function App() {
                           <Award className="w-5 h-5" />
                         </div>
                         <p className="font-mono text-3xl md:text-4xl font-extrabold text-[#56A8A7] tracking-tight">
-                          45+
+                          180+
                         </p>
                         <p className="text-xs md:text-sm font-semibold opacity-90 text-slate-300 font-sans">
                           {t.statsMembers}
@@ -664,7 +664,7 @@ export default function App() {
                           <Clock className="w-5 h-5" />
                         </div>
                         <p className="font-mono text-3xl md:text-4xl font-extrabold text-[#56A8A7] tracking-tight">
-                          350+
+                          2,000+
                         </p>
                         <p className="text-xs md:text-sm font-semibold opacity-90 text-slate-300 font-sans">
                           {t.statsHours}
