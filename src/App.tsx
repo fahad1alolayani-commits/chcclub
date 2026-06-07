@@ -108,7 +108,7 @@ const partnersList = [
     name: "أعمال الدمعان",
     subName: "أعمال الدمعان",
     bg: "bg-white border-slate-100",
-    logoUrl: "https://aldamanworks.com/storage/logo.webp"
+    logoUrl: "https://aldamanworks.com/storage/general/logo-removebg-preview.png"
   },
   {
    name: "مذارس التربية",
