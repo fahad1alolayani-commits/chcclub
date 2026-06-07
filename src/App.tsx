@@ -102,7 +102,7 @@ const partnersList = [
     name: "مدينة الدرعية الصحية",
     subName: "مدينة الدرعية الصحية",
     bg: "bg-white border-slate-100",
-    logoUrl: "https://i.postimg.cc/3xx2GqmJ/PHOTO-2026-06-05-15-38-13.jpg"
+    logoUrl: "https://chcksu.com/diriyahhealthcity.jpeg"
   },
   {
     name: "أعمال الدمعان",
@@ -114,19 +114,19 @@ const partnersList = [
    name: "مذارس التربية",
     subName: "مدارس التربية",
     bg: "bg-white border-slate-100",
-    logoUrl: "https://tis-cms.com/uploads/hwyt_almdars_02_f5d1fb68bf.png"
+    logoUrl: "https://chcksu.com/school.png"
   },
   {
     name: "فريق صقر الأسعافي",
     subName: "فريق صقر الأسعافي",
     bg: "bg-white border-slate-100",
-    logoUrl: "https://saqrvolunteer.it.com/logo.png"
+    logoUrl: "https://chcksu.com/Saqerteam.png"
   },
   {
     name: "الجمعية السعودية لمرضى الباركنسون",
     subName: "الجمعية السعودية لمرضى الباركنسون",
     bg: "bg-white border-slate-100",
-    logoUrl: "https://pbs.twimg.com/profile_images/2031652365904805889/pYQuLXXm.jpg"
+    logoUrl: "https://chcksu.com/park.png"
   }
 ];
 
