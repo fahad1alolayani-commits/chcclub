@@ -103,6 +103,30 @@ const partnersList = [
     subName: "مدينة الدرعية الصحية",
     bg: "bg-white border-slate-100",
     logoUrl: "https://i.postimg.cc/3xx2GqmJ/PHOTO-2026-06-05-15-38-13.jpg"
+  },
+  {
+    name: "أعمال الدمعان",
+    subName: "أعمال الدمعان",
+    bg: "bg-white border-slate-100",
+    logoUrl: "https://aldamanworks.com/storage/logo.webp"
+  },
+  {
+   name: "مذارس التربية",
+    subName: "مدارس التربية",
+    bg: "bg-white border-slate-100",
+    logoUrl: "https://tis-cms.com/uploads/hwyt_almdars_02_f5d1fb68bf.png"
+  },
+  {
+    name: "فريق صقر الأسعافي",
+    subName: "فريق صقر الأسعافي",
+    bg: "bg-white border-slate-100",
+    logoUrl: "https://saqrvolunteer.it.com/logo.png"
+  },
+  {
+    name: "الجمعية السعودية لمرضى الباركنسون",
+    subName: "الجمعية السعودية لمرضى الباركنسون",
+    bg: "bg-white border-slate-100",
+    logoUrl: "https://pbs.twimg.com/profile_images/2031652365904805889/pYQuLXXm.jpg"
   }
 ];
 
