@@ -83,6 +83,11 @@ export default function JoinForm({ lang = "ar" }: JoinFormProps) {
     } else if (!phoneRegex.test(form.phone)) {
       newErrors.phone = "يرجى إدخال رقم جوال صحيح (مثل: 05xxxxxxxx)";
     }
+if (!form.email) {
+    newErrors.email = "البريد الإلكتروني مطلوب";
+} else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) {
+    newErrors.email = "يرجى إدخال بريد إلكتروني صحيح";
+}
 
     if (!form.level) {
       newErrors.level = "يرجى اختيار المستوى الدراسي";
@@ -208,6 +213,26 @@ export default function JoinForm({ lang = "ar" }: JoinFormProps) {
                 <p className="text-red-500 text-xs mt-1.5 font-bold text-right">{errors.studentId}</p>
               )}
             </div>
+{/* Email Input */}
+<div>
+    <div class="relative">
+        <input 
+            type="email" 
+            name="email" 
+            value={form.email || ''} 
+            onChange={(e) => {
+                setForm({ ...form, email: e.target.value });
+                if (errors.email) setErrors({ ...errors, email: "" });
+            }}
+            required 
+            class="w-full pl-4 pr-10 py-3 rounded-xl border text-sm font-sans bg-white/85 text-right border-slate-200 focus:border-brand-teal focus:ring-4 focus:ring-brand-teal/10 outline-none transition-all duration-200 placeholder-slate-400" 
+            placeholder="example@ksu.edu.sa" 
+        />
+    </div>
+    {errors.email && (
+        <p class="text-red-500 text-xs mt-1.5 font-bold text-right">{errors.email}</p>
+    )}
+</div>
 
             {/* Mobile / Phone Number */}
             <div>
